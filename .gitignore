@@ -18,3 +18,5 @@ src/models_training/language_detection/results/checkpoint-99/tokenizer.json
 src/models_training/language_detection/results/checkpoint-99/trainer_state.json
 src/models_training/language_detection/results/checkpoint-99/training_args.bin
 src/models_training/language_detection/results/checkpoint-99/vocab.txt
+datasets/disease_nlp_eng.xlsx
+datasets/disease_nlp_esp.xlsx
