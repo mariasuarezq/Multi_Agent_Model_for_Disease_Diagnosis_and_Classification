@@ -20,3 +20,5 @@ src/models_training/language_detection/results/checkpoint-99/training_args.bin
 src/models_training/language_detection/results/checkpoint-99/vocab.txt
 datasets/disease_nlp_eng.xlsx
 datasets/disease_nlp_esp.xlsx
+src/models_training/language_detection/logs/events.out.tfevents.1735643047.MariaSuarezQ.26144.2
+src/models_training/language_detection/logs/events.out.tfevents.1735643701.MariaSuarezQ.26144.3
