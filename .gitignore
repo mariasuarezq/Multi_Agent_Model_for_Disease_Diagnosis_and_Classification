@@ -107,3 +107,13 @@ src/models_training/nlp_disease_classification_english/results/checkpoint-32/tok
 src/models_training/nlp_disease_classification_english/results/checkpoint-32/trainer_state.json
 src/models_training/nlp_disease_classification_english/results/checkpoint-32/training_args.bin
 src/models_training/nlp_disease_classification_english/results/checkpoint-32/vocab.txt
+src/models_training/language_detection/logs/events.out.tfevents.1735731813.MariaSuarezQ.23356.0
+src/models_training/language_detection/logs/events.out.tfevents.1735731916.MariaSuarezQ.21436.0
+src/models_training/language_detection/logs/events.out.tfevents.1735732056.MariaSuarezQ.16120.0
+src/models_training/language_detection/logs/events.out.tfevents.1735732951.MariaSuarezQ.16120.1
+src/models/language_detection/config.json
+src/models/language_detection/model.safetensors
+src/models/language_detection/special_tokens_map.json
+src/models/language_detection/tokenizer_config.json
+src/models/language_detection/tokenizer.json
+src/models/language_detection/vocab.txt
