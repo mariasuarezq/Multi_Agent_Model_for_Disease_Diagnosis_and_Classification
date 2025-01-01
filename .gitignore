@@ -119,3 +119,5 @@ src/models/language_detection/tokenizer.json
 src/models/language_detection/vocab.txt
 src/models_training/nlp_disease_classification_spanish/logs/events.out.tfevents.1735733282.MariaSuarezQ.17924.0
 src/models_training/nlp_disease_classification_spanish/logs/events.out.tfevents.1735733469.MariaSuarezQ.17924.1
+src/models_training/nlp_disease_classification_english/logs/events.out.tfevents.1735733895.MariaSuarezQ.22816.0
+src/models_training/nlp_disease_classification_english/logs/events.out.tfevents.1735734014.MariaSuarezQ.22816.1
