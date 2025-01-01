@@ -94,3 +94,16 @@ src/models/disease_classification_english_nlp/tokenizer_config.json
 src/models/disease_classification_english_nlp/tokenizer.json
 src/models/disease_classification_english_nlp/vocab.txt
 src/models/disease_classification_spanish_nlp/vocab.txt
+src/models_training/nlp_disease_classification_english/logs/events.out.tfevents.1735730162.MariaSuarezQ.18052.0
+src/models_training/nlp_disease_classification_english/logs/events.out.tfevents.1735730363.MariaSuarezQ.18052.1
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/config.json
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/model.safetensors
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/optimizer.pt
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/rng_state.pth
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/scheduler.pt
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/special_tokens_map.json
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/tokenizer_config.json
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/tokenizer.json
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/trainer_state.json
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/training_args.bin
+src/models_training/nlp_disease_classification_english/results/checkpoint-32/vocab.txt
