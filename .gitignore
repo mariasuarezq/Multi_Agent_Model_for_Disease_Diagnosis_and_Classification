@@ -121,3 +121,5 @@ src/models_training/nlp_disease_classification_spanish/logs/events.out.tfevents.
 src/models_training/nlp_disease_classification_spanish/logs/events.out.tfevents.1735733469.MariaSuarezQ.17924.1
 src/models_training/nlp_disease_classification_english/logs/events.out.tfevents.1735733895.MariaSuarezQ.22816.0
 src/models_training/nlp_disease_classification_english/logs/events.out.tfevents.1735734014.MariaSuarezQ.22816.1
+datasets/blood_samples_dataset.csv
+src/models_training/disease_classification/__pycache__/support_functions.cpython-311.pyc
