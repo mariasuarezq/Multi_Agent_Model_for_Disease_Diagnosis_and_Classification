@@ -4,6 +4,37 @@ from scipy.stats import chi2_contingency
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import plotly.express as px
+import math
+import seaborn as sns
+
+def create_target_variable_boxplots(dataframe, target_col):
+    # Identifica le colonne continue e la variabile categorica
+    continuous_cols = [col for col in dataframe.columns if col != target_col and pd.api.types.is_numeric_dtype(dataframe[col])]
+
+    # Numero di variabili continue
+    total_plots = len(continuous_cols)
+
+    # Calcola il layout della griglia dei subplots
+    cols = 3  # Numero di colonne nei subplot
+    rows = math.ceil(total_plots / cols)  # Numero di righe necessarie
+
+    # Crea la figura e gli assi
+    fig, axes = plt.subplots(rows, cols, figsize=(cols * 5, rows * 4), constrained_layout=True)
+    axes = axes.flatten()  # Per iterare facilmente sugli assi
+
+    # Crea i boxplot
+    for i, col in enumerate(continuous_cols):
+        sns.boxplot(data=dataframe, x=target_col, y=col, ax=axes[i])
+        axes[i].set_title(f"Boxplot of {col} by {target_col}")
+        axes[i].set_xlabel(target_col)
+        axes[i].set_ylabel(col)
+
+    # Rimuove i subplot vuoti
+    for j in range(i + 1, len(axes)):
+        fig.delaxes(axes[j])
+
+    # Mostra il grafico
+    plt.show()
 
 def atipicosAmissing(varaux):
     """
@@ -102,13 +133,3 @@ def Vcramer(v, target):
     v_cramer = np.sqrt(chi2 / (n * (min(tabla_cruzada.shape) - 1)))
 
     return v_cramer
-
-
-def plot_feature_impact_on_disease(dataframe, feature_name, target_variable):
-    fig = px.box(data_frame=dataframe,
-                 x=target_variable,
-                 y=feature_name,
-                 color=target_variable,
-                 title=f'Impact of {feature_name} on Disease')
-    fig.update_layout(plot_bgcolor='white', paper_bgcolor='white')
-    fig.show()
