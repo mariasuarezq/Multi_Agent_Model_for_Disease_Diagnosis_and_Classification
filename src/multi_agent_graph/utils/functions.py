@@ -6,7 +6,7 @@ from openai import OpenAI
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 current_dir = Path(__file__).parent
-MODELS_LOCATION = os.path.join(current_dir.parent, 'models')
+MODELS_LOCATION = os.path.join(current_dir.parent.parent, 'models')
 CONFIG_LOCATION = os.path.join(current_dir.parent.parent, 'config.json')
 PROMPTS_LOCATION = os.path.join(current_dir.parent, 'utils', 'prompts')
 
@@ -58,5 +58,5 @@ def extract_analysis_data_from_text(text):
         ],
         stream=False
     )
-    response = completion.choices[0].message.content.lstrip('`').rstrip('`')
+    response = completion.choices[0].message.content.lstrip('json').lstrip('`').rstrip('`').lstrip('json')
     return json.loads(response)

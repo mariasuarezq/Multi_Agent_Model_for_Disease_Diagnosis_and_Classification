@@ -1,8 +1,9 @@
-data = {"Glucose": None, "Cholesterol": None, "Hemoglobin": None, "Platelets": None,
-         "White Blood Cells": None, "Red Blood Cells": None, "Hematocrit": None, 
-         "Mean Corpuscular Volume": None, "Mean Corpuscular Hemoglobin": None, 
-         "Mean Corpuscular Hemoglobin Concentration": None, "Insulin": None, "BMI": None, 
-         "Systolic Blood Pressure": None, "Diastolic Blood Pressure": None, "Triglycerides": None, 
-         "HbA1c": None, "LDL Cholesterol": None, "HDL Cholesterol": None, "ALT": None, "AST": None, 
-         "Heart Rate": None, "Creatinine": None, "Troponin": None, "C-reactive Protein": None, 
-         "Disease": None}
+data = {
+    "Red Blood Cells": None, "Mean Corpuscular Hemoglobin": None, "LDL Cholesterol": None, 
+    "Hemoglobin": None, "AST": None, "ALT": None, "Heart Rate": None, "Platelets": None, 
+    "Hematocrit": None, "Triglycerides": None, "Troponin": None, "Mean Corpuscular Volume": None, 
+    "C-reactive Protein": None, "Mean Corpuscular Hemoglobin Concentration": None, 
+    "Systolic Blood Pressure": None, "Cholesterol": None, "Glucose": None, "White Blood Cells": None, 
+    "Creatinine": None, "HbA1c": None, "Insulin": None, "BMI": None, "Diastolic Blood Pressure": None, 
+    "HDL Cholesterol": None, "Disease": None
+}
