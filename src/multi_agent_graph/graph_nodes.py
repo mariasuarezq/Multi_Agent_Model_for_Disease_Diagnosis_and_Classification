@@ -1,32 +1,28 @@
 import os
-import json 
+import pandas as pd
 import numpy as np
+import warnings
 from pathlib import Path
 from joblib import load
 
-from utils.functions import get_nlp_prediction, extract_analysis_data_from_text, merge_dictionaries 
-from utils.resources import data
-import pandas as pd
+from utils.functions import (get_nlp_prediction, 
+                             extract_data_from_text_chunks, 
+                             preprocess_data_to_extract,
+                             get_text_analysis,
+                             get_user_input,
+                             generate_final_answer)
 
+warnings.filterwarnings("ignore")
 current_dir = Path(__file__).parent
 MODELS_LOCATION = os.path.join(current_dir.parent, 'models')
-data_structure = {
-        "Glucose": None, "Cholesterol": None, "Hemoglobin": None, "Platelets": None,
-         "White Blood Cells": None, "Red Blood Cells": None, "Hematocrit": None, 
-         "Mean Corpuscular Volume": None, "Mean Corpuscular Hemoglobin": None, 
-         "Mean Corpuscular Hemoglobin Concentration": None, "Insulin": None, "BMI": None, 
-         "Systolic Blood Pressure": None, "Diastolic Blood Pressure": None, "Triglycerides": None, 
-         "HbA1c": None, "LDL Cholesterol": None, "HDL Cholesterol": None, "ALT": None, "AST": None, 
-         "Heart Rate": None, "Creatinine": None, "Troponin": None, "C-reactive Protein": None
-         }
 
 def detect_language(state: dict) -> str:
-    input_text = state['input_text']
+    input_text = get_user_input()
     prediction_mapping = {0: 'English', 1: 'Spanish'}
-    language_detected = get_nlp_prediction(input_text=input_text,
+    detected_language = get_nlp_prediction(input_text=input_text,
                                            prediction_mapping=prediction_mapping,
                                            model_directory='language_detection')
-    return {"language_detected": language_detected}
+    return {"detected_language": detected_language, "input_text": input_text}
 
 
 def classify_disease_symptoms_spanish(state: dict) -> str:
@@ -51,20 +47,11 @@ def classify_disease_symptoms_english(state: dict) -> str:
                                     model_directory='disease_classification_english_nlp')
     return {"nlp_disease_prediction": prediction}
 
-def preprocess_data_to_extract(state: dict):
-    text_analysis = state['text_analysis']
-    return {"text_chunks": [text_analysis]}
-
-def extract_data_from_text_chunks(state: dict):
-    text_chunks = state['text_chunks']
-    data = data_structure
-    for text in text_chunks:
-        data_extracted = extract_analysis_data_from_text(text)
-        data = merge_dictionaries(data, data_extracted) 
-    return {"extracted_data": data}
-
 def classify_disease_from_analysis(state: dict) -> str:
-    extracted_data = state['extracted_data']    
+    text_blood_sample_analysis = get_text_analysis(state['detected_language'],
+                                                   state['nlp_disease_prediction'])
+    text_chunks = preprocess_data_to_extract(text_blood_sample_analysis)
+    extracted_data = extract_data_from_text_chunks(text_chunks)
     prediction_mapping = {0: 'Anemia',
                           1: 'Diabetes',
                           2: 'Healthy', 
@@ -77,3 +64,12 @@ def classify_disease_from_analysis(state: dict) -> str:
     pred_encoded = xgb_model.predict(data_df)
     prediction = prediction_mapping[np.argmax(pred_encoded)]
     return {"prediction_based_on_analysis": prediction}
+
+def final_asnwer_generator(state: dict) -> str:
+    final_answer = generate_final_answer(
+        state["nlp_disease_prediction"],
+        state["prediction_based_on_analysis"],
+        state["detected_language"]
+    )
+    print(f"\n\n {final_answer} \n\n")
+    return {"final_answer": final_answer}
