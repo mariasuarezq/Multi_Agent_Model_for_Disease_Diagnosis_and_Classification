@@ -64,9 +64,6 @@ mermaid_png = disease_detection_graph.get_graph(xray=True).draw_mermaid_png()
 image = Image.open(io.BytesIO(mermaid_png))
 image.show()
 
-# Importa le dipendenze necessarie se non già importate
-from langgraph.graph import END, START, StateGraph
-
 # Usa lo stato iniziale già definito
 initial_state = {
     "input_text": "",  
