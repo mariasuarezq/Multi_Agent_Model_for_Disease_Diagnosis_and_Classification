@@ -48,9 +48,9 @@ def classify_disease_symptoms_english(state: dict) -> str:
     return {"nlp_disease_prediction": prediction}
 
 def classify_disease_from_analysis(state: dict) -> str:
-    text_blood_sample_analysis = get_text_analysis(state['detected_language'],
-                                                   state['nlp_disease_prediction'])
-    text_chunks = preprocess_data_to_extract(text_blood_sample_analysis)
+    blood_analysis_doc_name = get_text_analysis(state['detected_language'],
+                                                state['nlp_disease_prediction']).lower()
+    text_chunks = preprocess_data_to_extract(blood_analysis_doc_name)
     extracted_data = extract_data_from_text_chunks(text_chunks)
     prediction_mapping = {0: 'Anemia',
                           1: 'Diabetes',

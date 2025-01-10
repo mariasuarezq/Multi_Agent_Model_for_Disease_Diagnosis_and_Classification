@@ -2,6 +2,8 @@ import os
 import json
 import torch
 import pandas as pd
+from PyPDF2 import PdfReader
+from docx import Document
 from pathlib import Path
 from openai import OpenAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -54,15 +56,14 @@ def get_text_analysis(detected_language: str, nlp_disease_prediction: str):
     if detected_language.lower()=="spanish":
         print(f"Los síntomas pueden sugerir un {nlp_disease_prediction}.")
         print(f"Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.")  
-        print("¿Podrías por favor insertar el nombre del documento con las análisis de tu muestra \
-              de sangre?")  
-        return input("Los formados suportados son txt, csv, excel: \n")
+        print("¿Podrías por favor insertar el nombre del documento con las análisis de tu muestra de sangre?")  
+        return input("Los formados suportados son txt, csv, xlsx, docx and pdf: \n")
 
     else:
         print(f"The symptoms may suggest a {nlp_disease_prediction}.")
         print(f"But the symptoms alone are often not sufficient to make an accurate diagnosis.")  
         print("Could you please insert the document's name with your blood sample analysis?")
-        return input("The supported extensions are son txt, csv, excel: \n")
+        return input("The supported extensions are son txt, csv, xlsx, docx and pdf: \n")
 
 def find_and_read_document(filename):
     # Get the list of all files in the directory
@@ -73,9 +74,10 @@ def find_and_read_document(filename):
         file_to_find = filename
     else:
         # Find the file with the given name and any valid extension
-        valid_extensions = ['.txt', '.csv', '.xlsx']
-        file_to_find = next((file for file in files_in_dir 
-                             if file.startswith(filename) and os.path.splitext(file)[1] in valid_extensions), None)
+        valid_extensions = ['.txt', '.csv', '.xlsx', '.docx', '.pdf']
+        file_to_find = next((file for file in files_in_dir if file.startswith(filename)), None)
+        if os.path.splitext(file_to_find)[1] not in valid_extensions:
+            raise ValueError("Document extension not supported.")
     
     # If the file is found, determine its type and read it
     if file_to_find:
@@ -102,6 +104,22 @@ def find_and_read_document(filename):
             # Generate the text
             result_text = ". ".join([f"{col} value: {df.iloc[0][col]}" for col in df.columns])
             return result_text
+        
+        elif file_extension == '.pdf':
+            # Read PDF content
+            pdf_reader = PdfReader(file_path)
+            content = ""
+            for page in pdf_reader.pages:
+                content += page.extract_text() + "\n"
+            return content.strip()
+        
+        elif file_extension == '.docx':
+            # Read Word document content
+            doc = Document(file_path)
+            content = ""
+            for paragraph in doc.paragraphs:
+                content += paragraph.text + "\n"
+            return content.strip()
 
         else:
             raise ValueError("Unsupported file type.")

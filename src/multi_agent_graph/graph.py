@@ -60,9 +60,9 @@ workflow.add_edge("final_asnwer_generator", END)
 disease_detection_graph = workflow.compile()
 
 # draw the graph 
-mermaid_png = disease_detection_graph.get_graph(xray=True).draw_mermaid_png()
-image = Image.open(io.BytesIO(mermaid_png))
-image.show()
+# mermaid_png = disease_detection_graph.get_graph(xray=True).draw_mermaid_png()
+# image = Image.open(io.BytesIO(mermaid_png))
+# image.show()
 
 # Usa lo stato iniziale già definito
 initial_state = {
