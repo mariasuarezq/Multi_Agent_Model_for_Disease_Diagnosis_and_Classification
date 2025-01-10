@@ -32,6 +32,11 @@ client = OpenAI(
 )
 
 
+def get_user_input():
+    print("\n Hi i am a virtual assistant designed to detect diseases.")
+    print("The disease i can recognize are Anemia, Diabetes, Healthy, Thalassemia and Thrombosis.")
+    return input("Tell me your symptoms, be concise and informative please: \n")
+
 def get_nlp_prediction(input_text: str, prediction_mapping: dict, model_directory: str) -> str:
     model_path = os.path.join(MODELS_LOCATION, model_directory)
     # Carica il tokenizer e il modello
@@ -44,59 +49,6 @@ def get_nlp_prediction(input_text: str, prediction_mapping: dict, model_director
         outputs = model(**inputs)
         prediction = torch.argmax(outputs.logits, axis=1).item()
     return prediction_mapping[prediction]
-
-def merge_dictionaries(dict1: dict, dict2: dict):
-    """
-    copia i valori non None da dict1 e aggiunge i valori non None da dict2 solo quando la chiave 
-    corrispondente in dict1 è None.
-    """
-    for key in dict1:
-        if dict1[key] is None:
-            dict1[key] = dict2[key]
-    return dict1
-
-def extract_analysis_data_from_text(text):
-    """
-    prende un testo e usa il prompt di data extraction per ottenere i dati delle analisi del sangue 
-    dal testo con l'llm.
-    """
-    model = 'Meta-Llama-3.3-70B-Instruct'
-    with open(os.path.join(PROMPTS_LOCATION, 'analysis_data_extraction.txt'), "r") as file:
-        prompt_data_extraction = file.read()
-    try:
-        completion = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "system", "content": prompt_data_extraction},
-                {"role": "user", "content": text}
-            ],
-            stream=False
-        )
-        response = completion.choices[0].message.content.lstrip('json').lstrip('`').rstrip('`').lstrip('json')
-        return json.loads(response)
-    except Exception as e:
-        print(f"Error during data extraction from text: {e}")
-        return data_structure
-
-
-def generate_final_answer(symptoms_prediction: str, analysis_prediction: str, detected_language: str):
-    model = 'Meta-Llama-3.3-70B-Instruct'
-    user_prompt = f""" This is the prediction based on the symptoms: {symptoms_prediction}.
-                    This is the prediction based on the analysis: {analysis_prediction}.
-                    Answer in {detected_language}. """
-    with open(os.path.join(PROMPTS_LOCATION, 'final_answer_generation.txt'), "r") as file:
-        prompt_final_answer_generation = file.read()
-
-    completion = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": prompt_final_answer_generation},
-            {"role": "user", "content": user_prompt}
-        ],
-        stream=False
-    )
-    response = completion.choices[0].message.content
-    return response
 
 def get_text_analysis(detected_language: str, nlp_disease_prediction: str):
     if detected_language.lower()=="spanish":
@@ -181,8 +133,56 @@ def extract_data_from_text_chunks(text_chunks: list):
         raise ValueError(f"The model couldn't extract the data for the following values: \n {error_log}")
     else:
         return data
+    
+def extract_analysis_data_from_text(text):
+    """
+    prende un testo e usa il prompt di data extraction per ottenere i dati delle analisi del sangue 
+    dal testo con l'llm.
+    """
+    model = 'Meta-Llama-3.3-70B-Instruct'
+    with open(os.path.join(PROMPTS_LOCATION, 'analysis_data_extraction.txt'), "r") as file:
+        prompt_data_extraction = file.read()
+    try:
+        completion = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": prompt_data_extraction},
+                {"role": "user", "content": text}
+            ],
+            stream=False
+        )
+        response = completion.choices[0].message.content.lstrip('json').lstrip('`').rstrip('`').lstrip('json')
+        return json.loads(response)
+    except Exception as e:
+        print(f"Error during data extraction from text: {e}")
+        return data_structure
+    
+def merge_dictionaries(dict1: dict, dict2: dict):
+    """
+    copia i valori non None da dict1 e aggiunge i valori non None da dict2 solo quando la chiave 
+    corrispondente in dict1 è None.
+    """
+    for key in dict1:
+        if dict1[key] is None:
+            dict1[key] = dict2[key]
+    return dict1
 
-def get_user_input():
-    print("\n Hi i am a virtual assistant designed to detect diseases.")
-    print("The disease i can recognize are Anemia, Diabetes, Healthy, Thalassemia and Thrombosis.")
-    return input("Tell me your symptoms, be concise and informative please: \n")
+
+def generate_final_answer(symptoms_prediction: str, analysis_prediction: str, detected_language: str):
+    model = 'Meta-Llama-3.3-70B-Instruct'
+    user_prompt = f""" This is the prediction based on the symptoms: {symptoms_prediction}.
+                    This is the prediction based on the analysis: {analysis_prediction}.
+                    Answer in {detected_language}. """
+    with open(os.path.join(PROMPTS_LOCATION, 'final_answer_generation.txt'), "r") as file:
+        prompt_final_answer_generation = file.read()
+
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": prompt_final_answer_generation},
+            {"role": "user", "content": user_prompt}
+        ],
+        stream=False
+    )
+    response = completion.choices[0].message.content
+    return response

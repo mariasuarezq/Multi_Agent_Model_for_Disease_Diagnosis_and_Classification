@@ -6,3 +6,4 @@ what was the prediction at first based on the symptoms and then on the analysis.
 
 Suggest the patient to go to the specialised doctor of the predicted diseased if he is not healthy, otherwise
 just suggest to the pationt that in the healthcare field is always better to consult a specialised professional.
+If the symptoms prediction and the blood analysis prediction give two different diseases, sugegst both specialized doctors.
