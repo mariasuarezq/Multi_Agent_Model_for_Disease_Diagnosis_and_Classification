@@ -1,15 +1,18 @@
 import os
 import json
 import torch
+import pandas as pd
 from pathlib import Path
 from openai import OpenAI
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 current_dir = Path(__file__).parent
 MODELS_LOCATION = os.path.join(current_dir.parent.parent, 'models')
 CONFIG_LOCATION = os.path.join(current_dir.parent.parent, 'config.json')
 PROMPTS_LOCATION = os.path.join(current_dir.parent, 'utils', 'prompts')
-8/3
+DOCUMENTS_LOCATION = os.path.join(current_dir.parent, 'utils', 'analysis_documents')
+
 data_structure = {
         "Glucose": None, "Cholesterol": None, "Hemoglobin": None, "Platelets": None,
          "White Blood Cells": None, "Red Blood Cells": None, "Hematocrit": None, 
@@ -47,29 +50,34 @@ def merge_dictionaries(dict1: dict, dict2: dict):
     copia i valori non None da dict1 e aggiunge i valori non None da dict2 solo quando la chiave 
     corrispondente in dict1 è None.
     """
-    merged_dict = {}
     for key in dict1:
-        if dict1[key] is not None:
-            merged_dict[key] = dict1[key]
-        elif dict2[key] is not None:
-            merged_dict[key] = dict2[key]
-
-    return merged_dict
+        if dict1[key] is None:
+            dict1[key] = dict2[key]
+    return dict1
 
 def extract_analysis_data_from_text(text):
+    """
+    prende un testo e usa il prompt di data extraction per ottenere i dati delle analisi del sangue 
+    dal testo con l'llm.
+    """
     model = 'Meta-Llama-3.3-70B-Instruct'
     with open(os.path.join(PROMPTS_LOCATION, 'analysis_data_extraction.txt'), "r") as file:
         prompt_data_extraction = file.read()
-    completion = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": prompt_data_extraction},
-            {"role": "user", "content": text}
-        ],
-        stream=False
-    )
-    response = completion.choices[0].message.content.lstrip('json').lstrip('`').rstrip('`').lstrip('json')
-    return json.loads(response)
+    try:
+        completion = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": prompt_data_extraction},
+                {"role": "user", "content": text}
+            ],
+            stream=False
+        )
+        response = completion.choices[0].message.content.lstrip('json').lstrip('`').rstrip('`').lstrip('json')
+        return json.loads(response)
+    except Exception as e:
+        print(f"Error during data extraction from text: {e}")
+        return data_structure
+
 
 def generate_final_answer(symptoms_prediction: str, analysis_prediction: str, detected_language: str):
     model = 'Meta-Llama-3.3-70B-Instruct'
@@ -93,23 +101,86 @@ def generate_final_answer(symptoms_prediction: str, analysis_prediction: str, de
 def get_text_analysis(detected_language: str, nlp_disease_prediction: str):
     if detected_language.lower()=="spanish":
         print(f"Los síntomas pueden sugerir un {nlp_disease_prediction}.")
-        print(f"Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.")    
-        return input("¿Podrías por favor insertar el análisis de tu muestra de sangre? \n")
+        print(f"Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.")  
+        print("¿Podrías por favor insertar el nombre del documento con las análisis de tu muestra \
+              de sangre?")  
+        return input("Los formados suportados son txt, csv, excel: \n")
 
     else:
         print(f"The symptoms may suggest a {nlp_disease_prediction}.")
-        print(f"But the symptoms alone are often not sufficient to make an accurate diagnosis.")    
-        return input("Could you please insert your blood sample analysis? \n")
+        print(f"But the symptoms alone are often not sufficient to make an accurate diagnosis.")  
+        print("Could you please insert the document's name with your blood sample analysis?")
+        return input("The supported extensions are son txt, csv, excel: \n")
 
-def preprocess_data_to_extract(text_analysis: str):
-    return [text_analysis]
+def find_and_read_document(filename):
+    # Get the list of all files in the directory
+    files_in_dir = os.listdir(DOCUMENTS_LOCATION)
+    
+    # Check if the filename provided has an extension
+    if "." in filename:
+        file_to_find = filename
+    else:
+        # Find the file with the given name and any valid extension
+        valid_extensions = ['.txt', '.csv', '.xlsx']
+        file_to_find = next((file for file in files_in_dir 
+                             if file.startswith(filename) and os.path.splitext(file)[1] in valid_extensions), None)
+    
+    # If the file is found, determine its type and read it
+    if file_to_find:
+        file_path = os.path.join(DOCUMENTS_LOCATION, file_to_find)
+        _, file_extension = os.path.splitext(file_to_find)
+
+        if file_extension == '.txt':
+            with open(file_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+            return content
+
+        elif file_extension == '.csv':
+            df = pd.read_csv(file_path)
+            if len(df) != 1:
+                raise ValueError("The csv file must have one row with the analysis result.")
+            # Generate the text
+            result_text = ". ".join([f"{col} value: {df.iloc[0][col]}" for col in df.columns])
+            return result_text
+
+        elif file_extension == '.xlsx':
+            df = pd.read_excel(file_path)
+            if len(df) != 1:
+                raise ValueError("The excel file must only one row with the analysis result.")
+            # Generate the text
+            result_text = ". ".join([f"{col} value: {df.iloc[0][col]}" for col in df.columns])
+            return result_text
+
+        else:
+            raise ValueError("Unsupported file type.")
+    else:
+        raise ValueError(f"File '{filename}' not found.")
+    
+def preprocess_data_to_extract(file_name: str):
+    text_analysis = find_and_read_document(file_name)
+    text_splitter = RecursiveCharacterTextSplitter(
+        separators=["\n\n", ".\n", ". ", "."],  
+        chunk_size=2000,
+        chunk_overlap=100
+    )   
+    text_chunks = text_splitter.split_text(text_analysis)
+    return text_chunks
 
 def extract_data_from_text_chunks(text_chunks: list):
+    """
+    from a list of text chunks extract and merges all the data.
+    """
     data = data_structure
     for text in text_chunks:
         data_extracted = extract_analysis_data_from_text(text)
         data = merge_dictionaries(data, data_extracted) 
-    return data
+
+    missing_values = [key for key, value in data.items() if value is None]
+    if missing_values:
+        error_log = "\n".join(missing_values)
+        raise ValueError(f"The model couldn't extract the data for the following values: \n {error_log}")
+    else:
+        return data
 
 def get_user_input():
     print("\n Hi i am a virtual assistant designed to detect diseases.")
