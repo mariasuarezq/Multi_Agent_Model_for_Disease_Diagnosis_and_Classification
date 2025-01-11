@@ -52,12 +52,12 @@ def get_nlp_prediction(input_text: str, prediction_mapping: dict, model_director
         prediction = torch.argmax(outputs.logits, axis=1).item()
     return prediction_mapping[prediction]
 
-def get_text_analysis(detected_language: str, nlp_disease_prediction: str):
+def get_analysis_doc_name(detected_language: str, nlp_disease_prediction: str):
     if detected_language.lower()=="spanish":
         print(f"Los síntomas pueden sugerir un {nlp_disease_prediction}.")
         print(f"Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.")  
         print("¿Podrías por favor insertar el nombre del documento con las análisis de tu muestra de sangre?")  
-        return input("Los formados suportados son txt, csv, xlsx, docx and pdf: \n")
+        return input("Los formatos aceptados son txt, csv, xlsx, docx and pdf: \n")
 
     else:
         print(f"The symptoms may suggest a {nlp_disease_prediction}.")
