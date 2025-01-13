@@ -10,7 +10,7 @@ from graph_nodes import (
     classify_disease_symptoms_spanish,
     classify_disease_symptoms_english,
     classify_disease_from_analysis,
-    final_asnwer_generator
+    final_answer_generator
     )
 
 
@@ -26,7 +26,7 @@ def language_distinction(state):
 
 class GraphState(TypedDict):
     """
-    Rappresenta lo stato del grafo
+    Representa el estado del grafo
     """
     input_text: str
     detected_language: str
@@ -35,17 +35,17 @@ class GraphState(TypedDict):
     final_answer: str
 
 
-# Initializing the graph
+# Inicializamos el grafo
 workflow = StateGraph(GraphState)
 
-# Defining the nodes
+# Definimos los nodos
 workflow.add_node("detect_language", detect_language)
 workflow.add_node("classify_disease_symptoms_spanish", classify_disease_symptoms_spanish)
 workflow.add_node("classify_disease_symptoms_english", classify_disease_symptoms_english)
 workflow.add_node("classify_disease_from_analysis", classify_disease_from_analysis)
-workflow.add_node("final_asnwer_generator", final_asnwer_generator)
+workflow.add_node("final_answer_generator", final_answer_generator)
 
-# Building the Graph edges
+# Construimos las aristas del grafo
 workflow.add_edge(START, "detect_language")
 workflow.add_conditional_edges("detect_language", 
                                language_distinction,
@@ -53,18 +53,18 @@ workflow.add_conditional_edges("detect_language",
                                 "english": "classify_disease_symptoms_english"})
 workflow.add_edge("classify_disease_symptoms_spanish", "classify_disease_from_analysis")
 workflow.add_edge("classify_disease_symptoms_english", "classify_disease_from_analysis")
-workflow.add_edge("classify_disease_from_analysis", "final_asnwer_generator")
-workflow.add_edge("final_asnwer_generator", END)
+workflow.add_edge("classify_disease_from_analysis", "final_answer_generator")
+workflow.add_edge("final_answer_generator", END)
 
-# compile the graph 
+# Compilamos el grafo 
 disease_detection_graph = workflow.compile()
 
-# draw the graph 
+# Dibujamos el grafo
 mermaid_png = disease_detection_graph.get_graph(xray=True).draw_mermaid_png()
 image = Image.open(io.BytesIO(mermaid_png))
 image.show()
 
-# Usa lo stato iniziale già definito
+# Usamos el estado inicial, ya definido
 initial_state = {
     "input_text": "",  
     "detected_language": "",
@@ -75,5 +75,5 @@ initial_state = {
     "prediction_based_on_analysis": ""
 }
 
-# Esegui il grafo
+# Ejecutamos el grafo
 result = disease_detection_graph.invoke(initial_state)

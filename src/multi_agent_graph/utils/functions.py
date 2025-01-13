@@ -35,24 +35,37 @@ client = OpenAI(
 
 
 def get_user_input():
+    """
+    Esta función imprime un mensaje explicativo y luego solicita al usuario que introduzca sus síntomas.
+    La entrada del usuario es devuelta como una cadena de texto.
+    """
     print("\n Hi i am a virtual assistant designed to detect diseases.")
     print("The disease i can recognize are Anemia, Diabetes, Healthy, Thalassemia and Thrombosis.")
     return input("Tell me your symptoms, be concise and informative please: \n")
 
 def get_nlp_prediction(input_text: str, prediction_mapping: dict, model_directory: str) -> str:
+    """
+    Esta función usa un modelo de NLP para predecir el idioma del texto proporcionado.
+    Carga el modelo y el tokenizer desde una ruta local, tokeniza el texto, hace la predicción y luego mapea 
+    el resultado de la predicción al idioma correspondiente usando el diccionario de predicciones proporcionado.
+    """
     model_path = os.path.join(MODELS_LOCATION, model_directory)
-    # Carica il tokenizer e il modello
+    # Carga el modelo
     tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)
     model = AutoModelForSequenceClassification.from_pretrained(model_path, local_files_only=True)
-    # Tokenizza la frase
+    # Tokeniza la frase
     inputs = tokenizer(input_text, padding=True, truncation=True, return_tensors="pt")
-    # Effettua la predizione
+    # Efectua la prediccion
     with torch.no_grad():
         outputs = model(**inputs)
         prediction = torch.argmax(outputs.logits, axis=1).item()
     return prediction_mapping[prediction]
 
 def get_analysis_doc_name(detected_language: str, nlp_disease_prediction: str):
+    """
+    Esta función solicita al usuario el nombre del documento del análisis de sangre. 
+    El texto de la solicitud se personaliza según el idioma detectado y la enfermedad sugerida por el análisis previo.
+    """
     if detected_language.lower()=="spanish":
         print(f"Los síntomas pueden sugerir un {nlp_disease_prediction}.")
         print(f"Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.")  
@@ -66,20 +79,25 @@ def get_analysis_doc_name(detected_language: str, nlp_disease_prediction: str):
         return input("The supported extensions are son txt, csv, xlsx, docx and pdf: \n")
 
 def find_and_read_document(filename):
-    # Get the list of all files in the directory
+    """
+    Esta función busca el documento proporcionado en el directorio de documentos. Si no se proporciona una 
+    extensión, intenta encontrar un archivo con cualquier extensión válida (.txt, .csv, .xlsx, .docx, .pdf).
+    Luego lee el contenido del archivo en función de su extensión (txt, csv, xlsx, pdf, docx).
+    """
+    # Obtenemos la lista de todos los archivos en el directorio
     files_in_dir = os.listdir(DOCUMENTS_LOCATION)
     
-    # Check if the filename provided has an extension
+    # Verificamos si el nombre de archivo proporcionado tiene una extensión
     if "." in filename:
         file_to_find = filename
     else:
-        # Find the file with the given name and any valid extension
+        # Buscamos el archivo con el nombre dado y cualquier extensión válida
         valid_extensions = ['.txt', '.csv', '.xlsx', '.docx', '.pdf']
         file_to_find = next((file for file in files_in_dir if file.startswith(filename)), None)
         if os.path.splitext(file_to_find)[1] not in valid_extensions:
             raise ValueError("Document extension not supported.")
     
-    # If the file is found, determine its type and read it
+    # Si encontramos el archivo, determinamos su tipo y lo leemos
     if file_to_find:
         file_path = os.path.join(DOCUMENTS_LOCATION, file_to_find)
         _, file_extension = os.path.splitext(file_to_find)
@@ -93,7 +111,6 @@ def find_and_read_document(filename):
             df = pd.read_csv(file_path)
             if len(df) != 1:
                 raise ValueError("The csv file must have one row with the analysis result.")
-            # Generate the text
             result_text = ". ".join([f"{col} value: {df.iloc[0][col]}" for col in df.columns])
             return result_text
 
@@ -101,12 +118,10 @@ def find_and_read_document(filename):
             df = pd.read_excel(file_path)
             if len(df) != 1:
                 raise ValueError("The excel file must only one row with the analysis result.")
-            # Generate the text
             result_text = ". ".join([f"{col} value: {df.iloc[0][col]}" for col in df.columns])
             return result_text
         
         elif file_extension == '.pdf':
-            # Read PDF content
             pdf_reader = PdfReader(file_path)
             content = ""
             for page in pdf_reader.pages:
@@ -114,7 +129,6 @@ def find_and_read_document(filename):
             return content.strip()
         
         elif file_extension == '.docx':
-            # Read Word document content
             doc = Document(file_path)
             content = ""
             for paragraph in doc.paragraphs:
@@ -127,6 +141,11 @@ def find_and_read_document(filename):
         raise ValueError(f"File '{filename}' not found.")
     
 def preprocess_data_to_extract(file_name: str):
+    """
+    Esta función procesa el nombre del archivo recibido, encuentra el documento correspondiente utilizando
+    la función find_and_read_document y luego divide el contenido en fragmentos de texto para su posterior análisis
+    usando 'RecursiveCharacterTextSplitter'.
+    """
     text_analysis = find_and_read_document(file_name)
     text_splitter = RecursiveCharacterTextSplitter(
         separators=["\n\n", ".\n", ". ", "."],  
@@ -138,7 +157,10 @@ def preprocess_data_to_extract(file_name: str):
 
 def extract_data_from_text_chunks(text_chunks: list):
     """
-    from a list of text chunks extract and merges all the data.
+    Esta función toma una lista de fragmentos de texto y extrae y fusiona los datos relevantes. 
+    Para extraer los datos, se llama a la función extract_analysis_data_from_text para cada fragmento,
+    y luego se fusionan los datos utilizando la función 'merge_dictionaries'.
+    Si faltan valores, se genera un error indicando qué datos faltan.
     """
     data = data_structure
     for text in text_chunks:
@@ -154,8 +176,9 @@ def extract_data_from_text_chunks(text_chunks: list):
     
 def extract_analysis_data_from_text(text):
     """
-    prende un testo e usa il prompt di data extraction per ottenere i dati delle analisi del sangue 
-    dal testo con l'llm.
+    Esta función utiliza el modelo de LLM 'Meta-Llama-3.3-70B-Instruct' para extraer los datos 
+    relevantes de un texto de análisis de sangre, usando un prompt almacenado en un archivo externo. 
+    La función se comunica con un servicio de completado de lenguaje para realizar esta extracción.
     """
     model = 'Meta-Llama-3.3-70B-Instruct'
     with open(os.path.join(PROMPTS_LOCATION, 'analysis_data_extraction.txt'), "r") as file:
@@ -177,8 +200,8 @@ def extract_analysis_data_from_text(text):
     
 def merge_dictionaries(dict1: dict, dict2: dict):
     """
-    copia i valori non None da dict1 e aggiunge i valori non None da dict2 solo quando la chiave 
-    corrispondente in dict1 è None.
+    Esta función fusiona dos diccionarios. Si una clave en el primer diccionario tiene un valor None, 
+    se reemplaza con el valor correspondiente del segundo diccionario.
     """
     for key in dict1:
         if dict1[key] is None:
@@ -187,6 +210,12 @@ def merge_dictionaries(dict1: dict, dict2: dict):
 
 
 def generate_final_answer(symptoms_prediction: str, analysis_prediction: str, detected_language: str):
+    """
+    Esta función genera la respuesta final que combina las predicciones de los síntomas y del análisis 
+    basándose en un modelo LLM llamado Meta-Llama.
+    Se forma un prompt que incluye ambas predicciones y el idioma detectado, y luego se genera una respuesta 
+    utilizando el modelo de lenguaje.
+    """
     model = 'Meta-Llama-3.3-70B-Instruct'
     user_prompt = f""" This is the prediction based on the symptoms: {symptoms_prediction}.
                     This is the prediction based on the analysis: {analysis_prediction}.
