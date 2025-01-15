@@ -39,8 +39,8 @@ def get_user_input():
     Esta función imprime un mensaje explicativo y luego solicita al usuario que introduzca sus síntomas.
     La entrada del usuario es devuelta como una cadena de texto.
     """
-    print("\n Hi i am a virtual assistant designed to detect diseases.")
-    print("The disease i can recognize are Anemia, Diabetes, Healthy, Thalassemia and Thrombosis.")
+    print("\n Hi, I am a virtual assistant designed to detect diseases.")
+    print("The disease I can recognize are anemia, diabetes, thalassemia and thrombosis.")
     return input("Tell me your symptoms, be concise and informative please: \n")
 
 def get_nlp_prediction(input_text: str, prediction_mapping: dict, model_directory: str) -> str:
@@ -67,13 +67,13 @@ def get_analysis_doc_name(detected_language: str, nlp_disease_prediction: str):
     El texto de la solicitud se personaliza según el idioma detectado y la enfermedad sugerida por el análisis previo.
     """
     if detected_language.lower()=="spanish":
-        print(f"Los síntomas pueden sugerir un {nlp_disease_prediction}.")
+        print(f"Los síntomas pueden sugerir {nlp_disease_prediction}.")
         print(f"Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.")  
-        print("¿Podrías por favor insertar el nombre del documento con las análisis de tu muestra de sangre?")  
+        print("¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?")  
         return input("Los formatos aceptados son txt, csv, xlsx, docx and pdf: \n")
 
     else:
-        print(f"The symptoms may suggest a {nlp_disease_prediction}.")
+        print(f"The symptoms may suggest {nlp_disease_prediction}.")
         print(f"But the symptoms alone are often not sufficient to make an accurate diagnosis.")  
         print("Could you please insert the document's name with your blood sample analysis?")
         return input("The supported extensions are son txt, csv, xlsx, docx and pdf: \n")
