@@ -42,11 +42,11 @@ Dependiendo del idioma en que el paciente haya proporcionado los síntomas (ingl
 ### Instalación
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/diagnostico-multiagente.git
+   git clone https://github.com/mariasuarezq/Multi_Agent_Model_for_Disease_Diagnosis_and_Classification
    ```
 2. Accede al directorio del proyecto:
    ```bash
-   cd diagnostico-multiagente
+   cd tfm
    ```
 3. Instala las dependencias necesarias:
    ```bash
@@ -57,10 +57,7 @@ Dependiendo del idioma en que el paciente haya proporcionado los síntomas (ingl
 
 ## Uso
 ### Ejecución del Modelo
-1. Inicia el programa principal:
-   ```bash
-   python graph.py
-   ```
+1. Ejecuta el archivo graph.py
 2. Sigue las instrucciones en pantalla:
    - Indica tus síntomas cuando se te soliciten.
    - Sube el archivo con tu analítica cuando el sistema lo requiera.
