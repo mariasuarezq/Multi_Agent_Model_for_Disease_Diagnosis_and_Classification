@@ -1,0 +1,78 @@
+LABORATORIO CLÍNICO CENTRAL
+Av. San Martín 1234, Madrid
+Tel: +34 91 234 5678
+
+INFORME DE ANÁLISIS DE SANGRE
+Fecha del informe: 10/01/2025
+Hora: 09:15
+
+DATOS DEL PACIENTE
+Nombre: Miguel Ángel Rodríguez Sánchez
+Fecha de nacimiento: 15/03/1982
+DNI: 45678912-K
+Número de historia clínica: HC-2025-4567
+Médico solicitante: Dra. Carmen Vázquez Martínez
+Colegiado nº: 28456789
+
+ANTECEDENTES RELEVANTES
+- Hipertensión arterial diagnosticada en 2020
+- Antecedentes familiares de diabetes tipo 2
+- Sobrepeso grado I
+- Última analítica realizada: 10/07/2024
+
+RESULTADOS PREVIOS (10/07/2024)
+Glucosa: 115 mg/dL
+Colesterol total: 245 mg/dL
+Triglicéridos: 180 mg/dL
+HbA1c: 6.1%
+
+RESULTADOS ACTUALES (10/01/2025)
+Parámetros hematológicos:
+- Hemoglobina: 0.544559880646533 g/dL
+- Plaquetas: 0.4006402542200498 x10⁶/µL
+- Leucocitos: 0.2945381391269565 x10³/µL
+- Eritrocitos: 0.3820213504718714 x10⁶/µL
+- Hematocrito: 0.6252668173594422%
+- VCM: 0.2951217167649673 fL
+- HCM: 0.8683693808899848 pg
+- CHCM: 0.026807746004545 g/dL
+
+Parámetros bioquímicos:
+- Glucosa: 0.4525390487229299 mg/dL
+- Colesterol total: 0.1161349392345196 mg/dL
+- Insulina: 0.582170303033687 µUI/mL
+- Triglicéridos: 0.0889399007845421 mg/dL
+- HbA1c: 0.4667952615580137%
+- Colesterol LDL: 0.3873320586791837 mg/dL
+- Colesterol HDL: 0.4217630924518363 mg/dL
+- ALT: 0.0071863049879385 U/L
+- AST: 0.5069181607878194 U/L
+- Creatinina: 0.4172947249526202 mg/dL
+- Troponina: 0.7990740722024966 ng/mL
+- Proteína C reactiva: 0.7792079136984322 mg/L
+
+Signos vitales durante la extracción:
+- Presión arterial sistólica: 0.0457824859332021 mmHg
+- Presión arterial diastólica: 0.6636424898368296 mmHg
+- Frecuencia cardíaca: 0.4317036047706637 lpm
+- IMC: 0.5774232519535167 kg/m²
+
+OBSERVACIONES
+El paciente acude en ayunas de 12 horas. Extracción realizada sin incidencias. Se observan cambios significativos en los valores de glucosa y perfil lipídico respecto a la analítica anterior. Se recomienda seguimiento por parte de su médico de atención primaria.
+
+INTERPRETACIÓN
+Se observan valores fuera de los rangos de referencia en varios parámetros. Se sugiere:
+- Evaluación del perfil glucémico
+- Control del perfil lipídico
+- Valoración de la función hepática
+- Seguimiento de marcadores cardíacos
+
+VALIDACIÓN
+Técnico de laboratorio: Laura Gómez Ruiz
+Facultativo responsable: Dr. Alberto Sanz Pérez
+Nº Colegiado: 28789456
+
+Este informe ha sido validado electrónicamente y está sujeto a verificación mediante código QR.
+Código de verificación: LAB2025011025478
+
+Fecha próximo control recomendada: 10/04/2025

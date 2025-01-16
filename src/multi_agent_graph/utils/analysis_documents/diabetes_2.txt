@@ -1,0 +1,112 @@
+﻿INFORME DE ANÁLISIS DE SANGRE
+Centro Médico Universitario Virgen del Rocío
+Paseo de la Salud 789, Sevilla
+Tel: +34 954 789 123
+
+
+DATOS DEL PACIENTE
+Nombre: Carlos Eduardo Fernández Ruiz
+Fecha de nacimiento: 28/03/1968
+DNI: 23456789-P
+Número de historia clínica: HC-2025-98765
+Médico solicitante: Dr. Rafael Montoya García
+Fecha de extracción: 14/01/2025
+Hora de extracción: 07:45
+
+
+ANTECEDENTES MÉDICOS
+- Diabetes mellitus tipo 2 diagnosticada en 2021
+- Obesidad grado II
+- Artritis reumatoide en tratamiento
+- Infarto agudo de miocardio en 2023
+- Antecedentes familiares de cardiopatía isquémica
+
+
+MEDICACIÓN ACTUAL
+- Metformina 850mg/12h
+- Atorvastatina 40mg/24h
+- Ácido acetilsalicílico 100mg/24h
+- Metotrexato 15mg/semana
+- Enalapril 20mg/24h
+
+
+ANÁLISIS PREVIO (01/12/2024)
+Glucosa: 165 mg/dL
+Colesterol total: 230 mg/dL
+Triglicéridos: 190 mg/dL
+HbA1c: 7.2%
+Creatinina: 1.3 mg/dL
+
+
+RESULTADOS ACTUALES (14/01/2025)
+Química Sanguínea:
+- Glucosa: 0.480943839247907 mmol/L
+- Colesterol total: 0.1413569897361126 mmol/L
+- Triglicéridos: 0.7006226867218255 mmol/L
+- HbA1c: 0.466375172098592 %
+- Creatinina: 0.1248061795758292 mg/dL
+- Insulina: 0.6580984789765563 µUI/mL
+
+
+Perfil Lipídico:
+- LDL Colesterol: 0.0958713881309596 mmol/L
+- HDL Colesterol: 0.0395053108189937 mmol/L
+
+
+Hemograma Completo:
+- Hemoglobina: 0.1751060183588899 g/dL
+- Plaquetas: 0.204519109347165 x10³/µL
+- Leucocitos: 0.8597192672406667 x10³/µL
+- Eritrocitos: 0.2174850900132705 x10⁶/µL
+- Hematocrito: 0.4879299875932159 %
+- Volumen Corpuscular Medio: 0.6397320503200685 fL
+- Hemoglobina Corpuscular Media: 0.2617232343575146 pg
+- Concentración de Hemoglobina Corpuscular Media: 0.3780883101858574 g/dL
+
+
+Función Hepática:
+- ALT: 0.3186323537749607 U/L
+- AST: 0.1529766483549055 U/L
+
+
+Marcadores Cardíacos:
+- Troponina: 0.9728027683219472 ng/mL
+- Proteína C Reactiva: 0.7547525846414244 mg/L
+
+
+Signos Vitales:
+- Presión Arterial Sistólica: 0.8290996337563303 mmHg
+- Presión Arterial Diastólica: 0.7280428609126539 mmHg
+- Frecuencia Cardíaca: 0.891037453456929 lpm
+- IMC: 0.8982099499133787 kg/m²
+
+
+INTERPRETACIÓN Y RECOMENDACIONES
+Se observa una evolución significativa en los valores respecto al control anterior, especialmente en marcadores cardíacos y perfil metabólico. Los niveles de troponina requieren seguimiento estrecho.
+
+
+PLAN DE SEGUIMIENTO
+1. Ajuste de dosis de metformina según nuevos valores de glucemia
+2. Monitorización cardiaca semanal
+3. Control analítico completo en 1 mes
+4. Evaluación por Cardiología en 72 horas
+5. Intensificación del control de presión arterial
+
+
+RECOMENDACIONES DIETÉTICAS Y DE ESTILO DE VIDA
+- Dieta hipocalórica estricta
+- Restricción absoluta de sodio
+- Actividad física supervisada por fisioterapeuta
+- Control diario de glucemia capilar
+- Registro diario de presión arterial
+- Evitar esfuerzos físicos intensos
+
+
+OBSERVACIONES ADICIONALES
+Se recomienda valoración urgente por Cardiología debido a los valores de troponina. Contactar con el servicio de urgencias ante dolor torácico o disnea.
+
+
+Dr. Antonio José López Navarro
+Especialista en Medicina Interna
+Nº Colegiado: 41/56789
+Firma digital: AJLN-2025-01-14
