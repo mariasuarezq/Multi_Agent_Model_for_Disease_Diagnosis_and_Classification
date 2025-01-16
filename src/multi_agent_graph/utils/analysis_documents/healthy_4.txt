@@ -1,0 +1,103 @@
+﻿INFORME DE ANÁLISIS DE SANGRE
+Centro Médico Teknon
+Avenida de la Medicina 234, Valencia
+Tel: +34 963 234 567
+
+
+DATOS DEL PACIENTE
+Nombre: Laura García Domínguez
+Fecha de nacimiento: 15/09/1990
+DNI: 56789123-T
+Número de historia clínica: HC-2025-34521
+Médico solicitante: Dra. Isabel Navarro Pérez
+Fecha de extracción: 14/01/2025
+Hora de extracción: 08:30
+
+
+ANTECEDENTES MÉDICOS
+- Sin antecedentes médicos de interés
+- Alergia estacional leve
+- Cirugía de amigdalectomía en la infancia
+- No presenta antecedentes familiares relevantes
+
+
+MEDICACIÓN ACTUAL
+- Antihistamínico (loratadina 10mg) en primavera según necesidad
+- Suplemento de vitamina D 1000UI/día
+
+
+ANÁLISIS PREVIO (30/09/2024)
+Glucosa: 85 mg/dL
+Colesterol total: 175 mg/dL
+Triglicéridos: 120 mg/dL
+HbA1c: 5.2%
+Creatinina: 0.8 mg/dL
+
+
+RESULTADOS ACTUALES (14/01/2025)
+Química Sanguínea:
+- Glucosa: 0.3484925796442906 mmol/L
+- Colesterol total: 0.3125785595206152 mmol/L
+- Triglicéridos: 0.761350376901643 mmol/L
+- HbA1c: 0.4617011889355265 %
+- Creatinina: 0.5155566869595349 mg/dL
+- Insulina: 0.1356270766897098 µUI/mL
+
+
+Perfil Lipídico:
+- LDL Colesterol: 0.577602457692828 mmol/L
+- HDL Colesterol: 0.5382160285075521 mmol/L
+
+
+Hemograma Completo:
+- Hemoglobina: 0.2849492385728958 g/dL
+- Plaquetas: 0.4121794524104737 x10³/µL
+- Leucocitos: 0.9166964804462332 x10³/µL
+- Eritrocitos: 0.2583565247811821 x10⁶/µL
+- Hematocrito: 0.7588970021395576 %
+- Volumen Corpuscular Medio: 0.1796948994186271 fL
+- Hemoglobina Corpuscular Media: 0.2577354441318471 pg
+- Concentración de Hemoglobina Corpuscular Media: 0.7096098334612915 g/dL
+
+
+Función Hepática:
+- ALT: 0.0904844019578797 U/L
+- AST: 0.1894245952042742 U/L
+
+
+Marcadores Cardíacos:
+- Troponina: 0.4902413247394701 ng/mL
+- Proteína C Reactiva: 0.7706573372499563 mg/L
+
+
+Signos Vitales:
+- Presión Arterial Sistólica: 0.1881810825150909 mmHg
+- Presión Arterial Diastólica: 0.0243112087491641 mmHg
+- Frecuencia Cardíaca: 0.4548698090282705 lpm
+- IMC: 0.5541112709964136 kg/m²
+
+
+INTERPRETACIÓN Y RECOMENDACIONES
+Los resultados actuales se encuentran dentro de los rangos de normalidad, manteniendo la tendencia favorable observada en análisis anteriores. El perfil general indica un estado de salud óptimo.
+
+
+PLAN DE SEGUIMIENTO
+1. Mantener control rutinario anual
+2. Continuar con suplementación de vitamina D
+3. Siguiente analítica de control en 12 meses
+4. Mantener revisión anual con medicina preventiva
+
+
+RECOMENDACIONES GENERALES
+- Mantener estilo de vida activo actual
+- Continuar con dieta equilibrada mediterránea
+- Mantener hidratación adecuada
+- Ejercicio físico regular como hasta ahora
+- Protección solar diaria
+- Control rutinario dental cada 6 meses
+
+
+Dra. Elena Martín Sanz
+Especialista en Medicina Preventiva
+Nº Colegiado: 46/78901
+Firma digital: EMS-2025-01-14

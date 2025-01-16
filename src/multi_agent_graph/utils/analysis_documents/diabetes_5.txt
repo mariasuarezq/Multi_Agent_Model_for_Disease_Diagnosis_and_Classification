@@ -1,0 +1,109 @@
+﻿LABORATORIO CLÍNICO MEDITERRÁNEO
+Avenida Principal 345
+Sevilla, España
+Tel: +34 95 567 8901
+
+
+INFORME DE ANÁLISIS DE SANGRE
+Fecha del informe: 14/01/2025
+Hora: 08:45
+
+
+DATOS DEL PACIENTE
+Nombre: Pablo Ruiz Morales
+Número de Historia Clínica: 2025-3456
+Fecha de nacimiento: 15/03/1983
+DNI: 78901234-H
+Género: Masculino
+Edad: 41 años
+
+
+MÉDICO SOLICITANTE
+Dra. Elena Torres Jiménez
+Nº Colegiado: 41/78901
+
+
+ANTECEDENTES RELEVANTES
+- Obesidad grado I en tratamiento dietético
+- Síndrome de apnea del sueño
+- Lumbalgia crónica
+- Antecedentes familiares de diabetes tipo 2
+- Vacunación COVID-19 completa
+
+
+MEDICACIÓN ACTUAL
+- Omeprazol 20mg/día
+- Naproxeno 550mg según necesidad
+- Complejo vitamínico B
+- CPAP nocturna
+
+
+RESULTADOS ACTUALES (14/01/2025)
+
+
+Parámetros Bioquímicos:
+Glucosa: 0.8982223071328859 g/L
+Colesterol total: 0.2587062770451904 g/L
+Triglicéridos: 0.766484041346098 g/L
+HDL Colesterol: 0.2226867461502331 g/L
+LDL Colesterol: 0.5299139105471475 g/L
+HbA1c: 0.3894607793982199 %
+Insulina: 0.4602919352029621 μUI/mL
+Creatinina: 0.1281241521094145 mg/dL
+Proteína C Reactiva: 0.7514377675767533 mg/L
+Troponina: 0.3790164835339623 ng/mL
+ALT: 0.7724611897016611 U/L
+AST: 0.1199937751510816 U/L
+
+
+Parámetros Hematológicos:
+Hemoglobina: 0.933306502784624 g/dL
+Hematocrito: 0.9000102416179887 %
+Plaquetas: 0.3530816568578563 x10⁶/μL
+Leucocitos: 0.3739516520879804 x10³/μL
+Eritrocitos: 0.2971384617407224 x10⁶/μL
+VCM: 0.9854882370007793 fL
+HCM: 0.6790073583645748 pg
+CHCM: 0.3557739489517892 g/dL
+
+
+Signos Vitales:
+Presión arterial sistólica: 0.6648345708043157 mmHg
+Presión arterial diastólica: 0.5375588428971985 mmHg
+Frecuencia cardíaca: 0.894273391460424 lpm
+IMC: 0.6243739951845315 kg/m²
+
+
+RESULTADOS PREVIOS (14/10/2024)
+Glucosa: 0.923 g/L
+Colesterol total: 0.275 g/L
+Triglicéridos: 0.798 g/L
+HDL Colesterol: 0.198 g/L
+LDL Colesterol: 0.543 g/L
+HbA1c: 0.412 %
+
+
+OBSERVACIONES
+El paciente muestra valores de glucosa elevados que sugieren un estado prediabético. Los niveles de triglicéridos permanecen elevados a pesar del tratamiento dietético. Se aprecia una mejoría leve en el perfil de colesterol HDL. Los valores de enzimas hepáticas muestran una elevación de ALT que requiere seguimiento.
+
+
+RECOMENDACIONES
+1. Iniciar control de glucemia capilar diaria
+2. Intensificar medidas dietéticas para control de triglicéridos
+3. Derivación a endocrinología para valoración
+4. Aumentar actividad física a 45 minutos diarios de ejercicio moderado
+5. Control de tensión arterial tres veces por semana
+6. Nuevo control analítico en 6 semanas
+
+
+PLAN DE SEGUIMIENTO
+- Cita programada con endocrinología: 28/01/2025
+- Control analítico específico de perfil hepático en 3 semanas
+- Valoración por nutricionista: 21/01/2025
+
+
+Firmado electrónicamente por:
+Dr. Francisco Moreno Vázquez
+Especialista en Análisis Clínicos
+Nº Colegiado: 41/12345
+Fecha y hora: 14/01/2025 09:30

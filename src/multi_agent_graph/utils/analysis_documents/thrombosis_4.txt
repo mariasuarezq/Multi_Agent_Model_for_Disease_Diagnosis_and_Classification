@@ -1,0 +1,106 @@
+﻿LABORATORIO CLÍNICO UNIVERSITARIO
+Paseo de la Salud 789
+Valencia, España
+Tel: +34 96 789 1234
+
+
+INFORME DE ANÁLISIS DE SANGRE
+Fecha del informe: 14/01/2025
+Hora: 14:15
+
+
+DATOS DEL PACIENTE
+Nombre: Laura Martínez Sánchez
+Número de Historia Clínica: 2025-9234
+Fecha de nacimiento: 23/11/1992
+DNI: 56789123-P
+Género: Femenino
+Edad: 32 años
+
+
+MÉDICO SOLICITANTE
+Dr. Roberto Gómez Navarro
+Nº Colegiado: 46/56789
+
+
+ANTECEDENTES RELEVANTES
+- Hipotiroidismo controlado desde 2020
+- Migraña crónica en tratamiento
+- Sin alergias conocidas
+- Deportista amateur (natación)
+- Antecedentes familiares de osteoporosis
+
+
+MEDICACIÓN ACTUAL
+- Levotiroxina 75mcg/día
+- Sumatriptán 50mg según necesidad
+- Suplemento de vitamina D 2000UI/día
+
+
+RESULTADOS ACTUALES (14/01/2025)
+
+
+Parámetros Bioquímicos:
+Glucosa: 0.3537344210665569 g/L
+Colesterol total: 0.7577568401935213 g/L
+Triglicéridos: 0.3932629422405935 g/L
+HDL Colesterol: 0.6155430770063064 g/L
+LDL Colesterol: 0.7293764509684526 g/L
+HbA1c: 0.446853543552876 %
+Insulina: 0.6544406230248903 μUI/mL
+Creatinina: 0.4078905009560289 mg/dL
+Proteína C Reactiva: 0.532099796944172 mg/L
+Troponina: 0.4268626017055326 ng/mL
+ALT: 0.7947349078832191 U/L
+AST: 0.2338898094447334 U/L
+
+
+Parámetros Hematológicos:
+Hemoglobina: 0.7550065199266185 g/dL
+Hematocrito: 0.3874606942592784 %
+Plaquetas: 0.0125937870016239 x10⁶/μL
+Leucocitos: 0.22768449724296 x10³/μL
+Eritrocitos: 0.4251174575612126 x10⁶/μL
+VCM: 0.4614176405695449 fL
+HCM: 0.3055879644176213 pg
+CHCM: 0.7411196983105182 g/dL
+
+
+Signos Vitales:
+Presión arterial sistólica: 0.1437127057520379 mmHg
+Presión arterial diastólica: 0.2128586427292584 mmHg
+Frecuencia cardíaca: 0.6121877959345874 lpm
+IMC: 0.4039202600015903 kg/m²
+
+
+RESULTADOS PREVIOS (14/10/2024)
+Glucosa: 0.367 g/L
+Colesterol total: 0.785 g/L
+Triglicéridos: 0.412 g/L
+HDL Colesterol: 0.589 g/L
+LDL Colesterol: 0.745 g/L
+HbA1c: 0.458 %
+
+
+OBSERVACIONES
+La paciente presenta valores significativamente bajos en el recuento plaquetario que requieren evaluación inmediata. Los niveles de enzimas hepáticas muestran una elevación moderada de ALT. El perfil tiroideo se mantiene estable con la medicación actual.
+
+
+RECOMENDACIONES
+1. Evaluación urgente por hematología por trombocitopenia
+2. Control de enzimas hepáticas en 15 días
+3. Mantener dosis actual de levotiroxina
+4. Evitar actividades con riesgo de sangrado
+5. Suspender temporalmente la actividad física intensa
+6. Control analítico completo en 2 semanas
+
+
+ACCIONES INMEDIATAS
+Se ha contactado telefónicamente con el médico solicitante para informar sobre los valores plaquetarios.
+
+
+Firmado electrónicamente por:
+Dra. Carmen López Medina
+Especialista en Análisis Clínicos
+Nº Colegiado: 46/34567
+Fecha y hora: 14/01/2025 15:00

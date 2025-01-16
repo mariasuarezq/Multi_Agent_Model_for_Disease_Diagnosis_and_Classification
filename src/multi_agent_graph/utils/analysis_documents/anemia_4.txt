@@ -1,0 +1,111 @@
+﻿INFORME DE ANÁLISIS DE SANGRE
+Centro Médico Puerta de Hierro
+Calle Manuel de Falla 1, Majadahonda
+Tel: +34 911 916 000
+
+
+DATOS DEL PACIENTE
+Nombre: Alejandro Torres Medina
+Fecha de nacimiento: 18/04/1972
+DNI: 45678901-W
+Número de historia clínica: HC-2025-12345
+Médico solicitante: Dra. Ana Belén Castro Ruiz
+Fecha de extracción: 14/01/2025
+Hora de extracción: 07:30
+
+
+ANTECEDENTES MÉDICOS
+- Fibrilación auricular paroxística diagnosticada en 2021
+- Hipertensión arterial
+- Síndrome de apnea del sueño
+- Operación de menisco derecho en 2019
+- Antecedentes familiares de cardiopatía isquémica (padre)
+
+
+MEDICACIÓN ACTUAL
+- Apixaban 5mg/12h
+- Bisoprolol 2.5mg/24h
+- Ramipril 5mg/24h
+- CPAP nocturna
+- Omeprazol 20mg/24h
+
+
+ANÁLISIS PREVIO (30/10/2024)
+Glucosa: 105 mg/dL
+Colesterol total: 210 mg/dL
+Triglicéridos: 170 mg/dL
+HbA1c: 5.9%
+Creatinina: 1.1 mg/dL
+
+
+RESULTADOS ACTUALES (14/01/2025)
+Química Sanguínea:
+- Glucosa: 0.0999824652796899 mmol/L
+- Colesterol total: 0.5427928747405704 mmol/L
+- Triglicéridos: 0.5931285036421376 mmol/L
+- HbA1c: 0.6013554670943022 %
+- Creatinina: 0.2913401648545775 mg/dL
+- Insulina: 0.1174102252909954 µUI/mL
+
+
+Perfil Lipídico:
+- LDL Colesterol: 0.7563295978115958 mmol/L
+- HDL Colesterol: 0.4060423013804102 mmol/L
+
+
+Hemograma Completo:
+- Hemoglobina: 0.7954346664319991 g/dL
+- Plaquetas: 0.1968213054530774 x10³/µL
+- Leucocitos: 0.3713846967529681 x10³/µL
+- Eritrocitos: 0.156493982586114 x10⁶/µL
+- Hematocrito: 0.457719710000978 %
+- Volumen Corpuscular Medio: 0.04694152724878 fL
+- Hemoglobina Corpuscular Media: 0.2446703836455368 pg
+- Concentración de Hemoglobina Corpuscular Media: 0.6036345874481732 g/dL
+
+
+Función Hepática:
+- ALT: 0.4235741696570769 U/L
+- AST: 0.7341070624327246 U/L
+
+
+Marcadores Cardíacos:
+- Troponina: 0.3619592224498873 ng/mL
+- Proteína C Reactiva: 0.6314255856449181 mg/L
+
+
+Signos Vitales:
+- Presión Arterial Sistólica: 0.490787850805606 mmHg
+- Presión Arterial Diastólica: 0.6139057444922673 mmHg
+- Frecuencia Cardíaca: 0.6566290717585048 lpm
+- IMC: 0.2468854885243887 kg/m²
+
+
+INTERPRETACIÓN Y RECOMENDACIONES
+Se observa una estabilización de los parámetros cardíacos y mejoría en el control de la presión arterial. Los marcadores de coagulación se mantienen en rango con la anticoagulación actual.
+
+
+PLAN DE SEGUIMIENTO
+1. Control por Cardiología en 2 meses
+2. Mantener anticoagulación actual
+3. Control de INR quincenal
+4. Estudio del sueño de control en 6 meses
+5. Analítica completa en 3 meses
+
+
+RECOMENDACIONES ESPECÍFICAS
+- Control diario de presión arterial
+- Mantener uso de CPAP nocturna
+- Dieta hiposódica estricta
+- Ejercicio aeróbico moderado supervisado
+- Control de peso semanal
+
+
+OBSERVACIONES ADICIONALES
+Pendiente de ecocardiograma de control programado para febrero 2025.
+
+
+Dr. Miguel Ángel Pérez Santos
+Especialista en Cardiología
+Nº Colegiado: 28/34567
+Firma digital: MAPS-2025-01-14
