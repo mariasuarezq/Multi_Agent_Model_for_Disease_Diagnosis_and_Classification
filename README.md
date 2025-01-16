@@ -11,6 +11,7 @@ Este proyecto es mi Trabajo de Fin de Máster del Máster en Big Data, Data Scie
    - Talasemia
    - Trombosis
    - Diabetes
+   
 Dependiendo del idioma en que el paciente haya proporcionado los síntomas (inglés o español), se utilizará un modelo NLP para clasificar los síntomas en el idioma correspondiente.
 4. **Análisis de datos clínicos**: El sistema solicita al paciente que cargue una analítica en uno de los siguientes formatos: CSV, XLSX, TXT, DOCX o PDF. Luego, un modelo clásico de Machine Learning analiza los datos clínicos (como niveles de colesterol, hemoglobina, HbA1c, PCR, etc.) y realiza una predicción más precisa. El resultado puede ser una de las enfermedades mencionadas o indicar que el paciente está sano.
 
