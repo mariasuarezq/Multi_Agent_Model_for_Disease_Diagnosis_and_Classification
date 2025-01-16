@@ -1,0 +1,99 @@
+﻿LABORATORIO DE ANÁLISIS CLÍNICOS VALDÉS
+C/ Serrano 142, 28006 Madrid
+Tel: +34 91 234 56 78
+N° Registro Sanitario: 28C4021
+
+
+INFORME DE ANÁLISIS DE SANGRE
+Fecha del informe: 14 de enero de 2025
+Hora de emisión: 09:30
+
+
+DATOS DEL PACIENTE
+Nombre: María Elena García Martínez
+DNI: 50123456-X
+Fecha de nacimiento: 03/05/1985
+Sexo: Femenino
+Médico solicitante: Dr. Antonio Ruiz Sánchez
+Número de colegiado: 28/12345678
+
+
+HISTORIAL MÉDICO RELEVANTE
+- Diagnóstico previo de prediabetes (2023)
+- Hipertensión controlada
+- Antecedentes familiares de enfermedad cardiovascular
+- No fumadora
+- Actividad física moderada
+
+
+RESULTADOS ANTERIORES (14/07/2024)
+Glucosa: 105 mg/dL
+Colesterol total: 195 mg/dL
+Triglicéridos: 180 mg/dL
+HbA1c: 6.1%
+Presión arterial: 135/88 mmHg
+
+
+RESULTADOS ACTUALES (14/01/2025)
+Química Sanguínea:
+- Glucosa: 0.407101301879597 mmol/L
+- Colesterol total: 0.1247375236822001 mmol/L
+- Triglicéridos: 0.2992126602176864 mmol/L
+- HbA1c: 0.4911850490538603%
+- Insulina: 0.5252298340817309 µUI/mL
+- LDL Colesterol: 0.701914341614922 mmol/L
+- HDL Colesterol: 0.2181040366844922 mmol/L
+
+
+Hemograma Completo:
+- Hemoglobina: 0.9833057855154954 g/dL
+- Plaquetas: 0.6638665375496902 x10³/µL
+- Glóbulos blancos: 0.3611126145503163 x10³/µL
+- Glóbulos rojos: 0.6637162101099232 x10⁶/µL
+- Hematocrito: 0.2325158884217852%
+- Volumen Corpuscular Medio: 0.3410555981923613 fL
+- Hemoglobina Corpuscular Media: 0.847441099941121 pg
+- Concentración Media de Hemoglobina Corpuscular: 0.309766155121288 g/dL
+
+
+Función Hepática:
+- ALT: 0.7903412138901684 U/L
+- AST: 0.570901661431205 U/L
+
+
+Función Renal y Marcadores Cardíacos:
+- Creatinina: 0.3109640981499968 mg/dL
+- Troponina: 0.3109002544567075 ng/mL
+- Proteína C-reactiva: 0.6224027478384111 mg/L
+
+
+Signos Vitales:
+- Presión arterial sistólica: 0.7410085620249891 mmHg
+- Presión arterial diastólica: 0.6784999098942022 mmHg
+- Frecuencia cardíaca: 0.3391246982263813 lpm
+- IMC: 0.5583615959874102 kg/m²
+
+
+INTERPRETACIÓN CLÍNICA
+La paciente muestra cambios significativos en comparación con sus valores anteriores. Se observa una notable mejoría en el control glucémico y los niveles lipídicos. Los marcadores de función hepática y renal se encuentran dentro de rangos aceptables. Los valores hematológicos sugieren una adecuada función medular.
+
+
+RECOMENDACIONES
+1. Mantener el régimen actual de medicación para la hipertensión
+2. Continuar con la dieta baja en carbohidratos y grasas saturadas
+3. Aumentar gradualmente la actividad física a 150 minutos semanales
+4. Control de presión arterial dos veces por semana
+5. Seguimiento en 3 meses para nuevo control metabólico
+
+
+OBSERVACIONES ADICIONALES
+La paciente ha mostrado buena adherencia al tratamiento prescrito. Los cambios en el estilo de vida implementados desde la última consulta han tenido un impacto positivo en los resultados actuales.
+
+
+________________________
+Dr. Jorge Valdés Romero
+Director del Laboratorio
+Nº Colegiado: 28/87654321
+
+
+Este informe ha sido validado electrónicamente y los resultados han sido verificados mediante control de calidad interno según la norma ISO 15189.
