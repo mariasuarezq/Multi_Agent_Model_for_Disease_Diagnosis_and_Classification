@@ -58,3 +58,42 @@ Please schedule an appointment with a Hematologist at your earliest convenience.
 Best regards,
 
 Medical Virtual Assistant.
+
+## Anemia_5.csv
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+Hi, I'm always feeling exahusted and having headaches. Moreover, my hands and feet are always cold. What can it be?
+
+The symptoms may suggest Anemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+anemia_5.csv
+
+Dear patient, 
+
+Based on the symptoms you provided, our initial prediction was that you may be suffering from Anemia. This prediction was further confirmed by the analysis of your blood sample, which also indicated Anemia. 
+
+If you are not feeling healthy, I recommend that you consult a hematologist, a specialized doctor who deals with blood-related disorders, for a thorough evaluation and proper guidance. 
+
+However, please note that in the healthcare field, it's always best to consult a specialized professional for an accurate diagnosis and treatment plan.
+
+Best regards,
+
+Medical Virtual Assistant
+
+## Anemia_6.pdf
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, me siento muy débil constantmente, y me duele el pecho, aun realizando poca actividad. Además, he notado que mi piel está algo amarilla. ¿Que podría ser?
+
+Los síntomas pueden sugerir Anemia.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+anemia_6.pdf
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se predijo que podría padecer de Anemia. Posteriormente, tras analizar su muestra de sangre, la predicción también indicó Anemia. Si no se siente saludable, le recomiendo consultar a un hematólogo, especialista en trastornos de la sangre, para una evaluación y tratamiento adecuados. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento precisos.
