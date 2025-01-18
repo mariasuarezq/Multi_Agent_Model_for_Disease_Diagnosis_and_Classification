@@ -73,7 +73,7 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
 ### Salida del Sistema
 - Diagnóstico preliminar basado en síntomas.
 - Diagnóstico final basado en datos clínicos.
-- Recomendaciones detalladas en el idioma del paciente.
+- Recomendaciones detalladas en el idioma del  paciente.
 
 
 
