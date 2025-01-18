@@ -39,8 +39,8 @@ def get_user_input():
     Esta función imprime un mensaje explicativo y luego solicita al usuario que introduzca sus síntomas.
     La entrada del usuario es devuelta como una cadena de texto.
     """
-    print("\n Hi, I am a virtual assistant designed to detect diseases.")
-    print("The disease I can recognize are anemia, diabetes, thalassemia and thrombosis.")
+    print("\nHi, I am a virtual assistant designed to detect diseases.")
+    print("The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.")
     return input("Tell me your symptoms, be concise and informative please: \n")
 
 def get_nlp_prediction(input_text: str, prediction_mapping: dict, model_directory: str) -> str:
