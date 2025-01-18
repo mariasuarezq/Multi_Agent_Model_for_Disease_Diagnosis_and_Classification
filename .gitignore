@@ -1,4 +1,3 @@
-datasets/language_detection.csv
 src/models/languiage_detection/config.json
 src/models/languiage_detection/model.safetensors
 src/models/languiage_detection/special_tokens_map.json
@@ -18,8 +17,6 @@ src/models_training/language_detection/results/checkpoint-99/tokenizer.json
 src/models_training/language_detection/results/checkpoint-99/trainer_state.json
 src/models_training/language_detection/results/checkpoint-99/training_args.bin
 src/models_training/language_detection/results/checkpoint-99/vocab.txt
-datasets/disease_nlp_eng.xlsx
-datasets/disease_nlp_esp.xlsx
 src/models_training/language_detection/logs/events.out.tfevents.1735643047.MariaSuarezQ.26144.2
 src/models_training/language_detection/logs/events.out.tfevents.1735643701.MariaSuarezQ.26144.3
 src/models_training/nlp_disease_classification_spanish/logs/events.out.tfevents.1735644391.MariaSuarezQ.11364.0
@@ -121,7 +118,6 @@ src/models_training/nlp_disease_classification_spanish/logs/events.out.tfevents.
 src/models_training/nlp_disease_classification_spanish/logs/events.out.tfevents.1735733469.MariaSuarezQ.17924.1
 src/models_training/nlp_disease_classification_english/logs/events.out.tfevents.1735733895.MariaSuarezQ.22816.0
 src/models_training/nlp_disease_classification_english/logs/events.out.tfevents.1735734014.MariaSuarezQ.22816.1
-datasets/blood_samples_dataset.csv
 src/models_training/disease_classification/__pycache__/support_functions.cpython-311.pyc
 src/config.json
 src/models/disease_classification.joblib
