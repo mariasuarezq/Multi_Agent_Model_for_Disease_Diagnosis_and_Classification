@@ -58,4 +58,5 @@ It's always best to consult a specialized professional in the healthcare field f
 Please schedule an appointment with a Hematologist at your earliest convenience.
 
 Best regards,
+
 Medical Virtual Assistant.
