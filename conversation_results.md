@@ -35,6 +35,7 @@ Dado que ambas predicciones sugieren trastornos relacionados con la sangre, pero
 Recuerde que en el campo de la salud, siempre es mejor consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados.
 
 Atentamente,
+
 Asistente Virtual Médico.
 
 ## Anemia_4.txt
