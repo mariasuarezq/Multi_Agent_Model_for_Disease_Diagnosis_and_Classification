@@ -19,7 +19,7 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
    - Diagnóstico final
    - Recomendaciones personalizadas
 
-   ![Arquitectura del modelo](src\multi_agent_graph\arquitectura_modelo.jpg)
+   ![Arquitectura del modelo](arquitectura_modelo.jpg)
 
 ## Tecnologías Utilizadas
 - **Procesamiento de Lenguaje Natural (NLP)**:
