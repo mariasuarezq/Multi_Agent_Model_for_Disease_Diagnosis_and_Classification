@@ -97,3 +97,18 @@ Los formatos aceptados son txt, csv, xlsx, docx and pdf:
 anemia_6.pdf
 
 Estimado paciente, según la evaluación inicial basada en sus síntomas, se predijo que podría padecer de Anemia. Posteriormente, tras analizar su muestra de sangre, la predicción también indicó Anemia. Si no se siente saludable, le recomiendo consultar a un hematólogo, especialista en trastornos de la sangre, para una evaluación y tratamiento adecuados. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento precisos.
+
+## Anemia_7.xlsx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola. Tengo dificultad para respirar, sobre todo haciendo ejercicio. Además, tengo palpitaciones, y me siento mareada y con vértido. ¿Qué podría ser?
+
+Los síntomas pueden sugerir Diabetes.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+anemia_7.xlsx
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, la predicción apuntaba hacia la Diabetes. Sin embargo, tras analizar su muestra de sangre, la predicción sugiere Anemia. Dado que ambas predicciones indican posibles condiciones diferentes, le recomiendo consultar a un endocrinólogo para evaluar la posible Diabetes y a un hematólogo para evaluar la posible Anemia. Es importante obtener una evaluación completa y precisa para determinar el curso de acción adecuado para su salud.
