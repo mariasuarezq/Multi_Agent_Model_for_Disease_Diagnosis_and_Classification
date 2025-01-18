@@ -14,7 +14,7 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
 
     Dependiendo del idioma en que el paciente haya proporcionado los síntomas (inglés o español), se utilizará un modelo NLP para clasificar los síntomas en el idioma correspondiente.
 
-4. **Análisis de datos clínicos**: El sistema solicita al paciente que cargue una analítica en uno de los siguientes formatos: CSV, XLSX, TXT, DOCX o PDF. Luego, un modelo clásico de Machine Learning analiza los datos clínicos (como niveles de colesterol, hemoglobina, HbA1c, PCR, etc.) y realiza una predicción más precisa. El resultado puede ser una de las enfermedades mencionadas o indicar que el paciente está sano.
+4. **Análisis de datos clínicos**: El sistema solicita al paciente que cargue una analítica en uno de los siguientes formatos: CSV, XLSX, TXT, DOCX o PDF. Luego, un modelo clásico de Machine Learning analiza los datos clínicos (glucosa (mg/dL), colesterol (mg/dL), hemoglobina (g/L), plaquetas (por microlitro de sangre), glóbulos blancos (por milímetros cúbicos de sangre), glóbulos rojos (millones de células por microlitros de sangre), hematocritos (porcentaje), volumen corpuscular medio (VCM) (femtolitro), hemoglobina corpuscular media (HCM) (picogramos), concentración de hemoglobina corpurscular media (CHCM) (gramos por decilitro), insulina (microU/mL), índice de masa corporal (IMC) (kg/m^2), presión arterial sistólica (mmHg), presión arterial diastólica (mmHg), triglicéridos (mg/dL), HbA1c (hemoglobina glicosilada) (porcentaje), colesterol LDL (mg/dL), colesterol HDL (mg/dL), alanina aminotransferasa (ALT) (U/L), aspartato aminotransferasa (AST) (U/L), frecuencia cardiaca (latidos por minuto), creatinina (mg/dL), troponina (ng/mL) y proteína C reactiva (PCR) (mg/L)) y realiza una predicción más precisa. Estos datos ya están escalados en el rango (0,1). El resultado puede ser una de las enfermedades mencionadas o indicar que el paciente está sano.
 
 5. **Respuesta final y recomendaciones**: Utilizando un LLM (Large Language Model), el sistema genera un informe detallado que incluye:
    - Diagnóstico final
@@ -23,10 +23,11 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
 
 ## Tecnologías Utilizadas
 - **Procesamiento de Lenguaje Natural (NLP)**:
-  - Modelo para detección de idioma (español/inglés).
-  - Modelos de clasificación de síntomas en español e inglés.
+  - Modelo para detección de idioma (español/inglés). Hemos utilizado el modelo preentrenado distilbert para el fine tuning.
+  - Modelo de clasificación de síntomas en español, donde se ha utilizado el modelo preentrenado bertin para el fine tuning.
+  - Modelo de clasificación de síntomas en inglés, donde se ha utilizado el modelo preentrenado distilbert para el fine tuning.
 - **Machine Learning**:
-  - Clasificadores clásicos (SVM, KNN Neighbours, Decission Tree y XGBoost) para análisis de datos clínicos.
+  - Clasificadores clásicos (SVM, KNN Neighbours, Decission Tree y XGBoost) para análisis de datos clínicos, eligiendo el modelo construido con XGBoost como el mejor en términos de robustez y generalización.
 - **Large Language Model (LLM)**:
   - Generación de respuestas detalladas y recomendaciones finales mediante el modelo de LLM "Meta-Llama-3.3-70B-Instruct"
 - **Integración de formatos**:
@@ -35,22 +36,15 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
 
 ## Guía de Instalación
 ### Requisitos Previos
-- Python 3.8 o superior
+- Python 3.11.7
 - Bibliotecas necesarias (pueden instalarse desde `requirements.txt`):
   ```bash
   pip install -r requirements.txt
   ```
 
 ### Instalación
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/mariasuarezq/Multi_Agent_Model_for_Disease_Diagnosis_and_Classification
-   ```
-2. Accede al directorio del proyecto:
-   ```bash
-   cd tfm
-   ```
-3. Instala las dependencias necesarias:
+1. Clona este repositorio.
+2. Instala las dependencias necesarias:
    ```bash
    pip install -r requirements.txt
    ```
@@ -75,7 +69,7 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
 1. Ejecuta el archivo graph.py
 2. Sigue las instrucciones en pantalla:
    - Indica tus síntomas cuando se te soliciten.
-   - Sube el archivo con tu analítica cuando el sistema lo requiera.
+   - Escribe el nombre del archivo (incluyendo la extensión) que contiene tu analítica cuando el sistema lo requiera.
 
 ### Formatos de Entrada
 - **Síntomas**: Texto libre en español o inglés.
