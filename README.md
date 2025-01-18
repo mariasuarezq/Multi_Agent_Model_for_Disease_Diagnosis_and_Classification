@@ -3,7 +3,7 @@
 ## Descripción General
 Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfermedades basándose en los síntomas y datos analíticos proporcionados por los pacientes. El sistema soporta interacción en dos idiomas: inglés y español, ajustándose al idioma hablado por el usuario.
 
-### Funcionamiento del Modelo
+## Funcionamiento del Modelo
 1. **Identificación del idioma**: Un modelo NLP detecta si el paciente habla en inglés o en español.
 2. **Recopilación de síntomas**: El sistema pregunta al paciente sobre sus síntomas en el idioma detectado y recibe sus respuestas.
 3. **Predicción inicial**: Basado en los síntomas proporcionados, se utiliza un modelo NLP para clasificar los síntomas en una de las siguientes enfermedades:
@@ -13,13 +13,13 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
    - Diabetes
 
     Dependiendo del idioma en que el paciente haya proporcionado los síntomas (inglés o español), se utilizará un modelo NLP para clasificar los síntomas en el idioma correspondiente.
-
 4. **Análisis de datos clínicos**: El sistema solicita al paciente que cargue una analítica en uno de los siguientes formatos: CSV, XLSX, TXT, DOCX o PDF. Luego, un modelo clásico de Machine Learning analiza los datos clínicos (glucosa (mg/dL), colesterol (mg/dL), hemoglobina (g/L), plaquetas (por microlitro de sangre), glóbulos blancos (por milímetros cúbicos de sangre), glóbulos rojos (millones de células por microlitros de sangre), hematocritos (porcentaje), volumen corpuscular medio (VCM) (femtolitro), hemoglobina corpuscular media (HCM) (picogramos), concentración de hemoglobina corpurscular media (CHCM) (gramos por decilitro), insulina (microU/mL), índice de masa corporal (IMC) (kg/m^2), presión arterial sistólica (mmHg), presión arterial diastólica (mmHg), triglicéridos (mg/dL), HbA1c (hemoglobina glicosilada) (porcentaje), colesterol LDL (mg/dL), colesterol HDL (mg/dL), alanina aminotransferasa (ALT) (U/L), aspartato aminotransferasa (AST) (U/L), frecuencia cardiaca (latidos por minuto), creatinina (mg/dL), troponina (ng/mL) y proteína C reactiva (PCR) (mg/L)) y realiza una predicción más precisa. Estos datos ya están escalados en el rango (0,1). El resultado puede ser una de las enfermedades mencionadas o indicar que el paciente está sano.
 
 5. **Respuesta final y recomendaciones**: Utilizando un LLM (Large Language Model), el sistema genera un informe detallado que incluye:
    - Diagnóstico final
    - Recomendaciones personalizadas
 
+   ![Texto alternativo](src\multi_agent_graph\arquitectura_modelo.jpg)
 
 ## Tecnologías Utilizadas
 - **Procesamiento de Lenguaje Natural (NLP)**:
@@ -44,7 +44,6 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
    ```bash
    pip install -r requirements.txt
    ```
-
 
 ## Uso
 ### Pasos Preliminares
