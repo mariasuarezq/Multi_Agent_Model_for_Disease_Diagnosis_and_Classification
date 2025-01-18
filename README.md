@@ -37,10 +37,6 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
 ## Guía de Instalación
 ### Requisitos Previos
 - Python 3.11.7
-- Bibliotecas necesarias (pueden instalarse desde `requirements.txt`):
-  ```bash
-  pip install -r requirements.txt
-  ```
 
 ### Instalación
 1. Clona este repositorio.
