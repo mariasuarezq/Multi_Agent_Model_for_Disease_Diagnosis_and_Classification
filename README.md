@@ -68,7 +68,7 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
 
 ### Formatos de Entrada
 - **Síntomas**: Texto libre en español o inglés.
-- **Analítica**: Archivos en formato CSV, XLSX, TXT, DOCX o PDF que contengan datos como niveles de trigicéridos, glucosa, plaquetas, etc.
+- **Analítica**: Archivos en formato .csv, .xlsx, .txt, .docx o .pdf que contengan datos como niveles de trigicéridos, glucosa, plaquetas, etc.
 
 ### Salida del Sistema
 - Diagnóstico preliminar basado en síntomas.
