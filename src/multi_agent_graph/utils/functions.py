@@ -178,7 +178,6 @@ def extract_analysis_data_from_text(text):
     """
     Esta función utiliza el modelo de LLM 'Meta-Llama-3.3-70B-Instruct' para extraer los datos 
     relevantes de un texto de análisis de sangre, usando un prompt almacenado en un archivo externo. 
-    La función se comunica con un servicio de completado de lenguaje para realizar esta extracción.
     """
     model = 'Meta-Llama-3.3-70B-Instruct'
     with open(os.path.join(PROMPTS_LOCATION, 'analysis_data_extraction.txt'), "r") as file:
@@ -212,7 +211,7 @@ def merge_dictionaries(dict1: dict, dict2: dict):
 def generate_final_answer(symptoms_prediction: str, analysis_prediction: str, detected_language: str):
     """
     Esta función genera la respuesta final que combina las predicciones de los síntomas y del análisis 
-    basándose en un modelo LLM llamado Meta-Llama.
+    basándose en un modelo LLM.
     Se forma un prompt que incluye ambas predicciones y el idioma detectado, y luego se genera una respuesta 
     utilizando el modelo de lenguaje.
     """

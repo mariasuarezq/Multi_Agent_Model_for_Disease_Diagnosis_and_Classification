@@ -22,7 +22,7 @@ def detect_language(state: dict) -> str:
     Esta función detecta el idioma del texto proporcionado por el usuario.
     Llama a la función get_user_input() para obtener el texto y luego utiliza 
     get_nlp_prediction() para hacer la predicción sobre el idioma del texto.
-    Devuelve un diccionario con el idioma detectado y el texto introducido.
+    Actualiza el estado del grafo con el idioma detectado y el texto introducido.
     """
     input_text = get_user_input()
     prediction_mapping = {0: 'English', 1: 'Spanish'}
@@ -36,8 +36,8 @@ def classify_disease_symptoms_spanish(state: dict) -> str:
     """
     Esta función clasifica los síntomas proporcionados por el usuario en una de las enfermedades predefinidas:
     Anemia, Diabetes, Talasemia o Trombosis, usando un modelo de clasificación de enfermedades en español.
-    Toma el texto de los síntomas desde el estado, y luego usa la función get_nlp_prediction() para hacer la predicción.
-    Devuelve un diccionario con la predicción de la enfermedad.
+    Toma el texto de los síntomas desde el estado del grafo, y luego usa la función get_nlp_prediction() para 
+    hacer la predicción. Actualiza el estado del grafo con la predicción de la enfermedad.
     """
     input_text = state['input_text']
     prediction_mapping = {0: 'Anemia',
@@ -53,8 +53,8 @@ def classify_disease_symptoms_english(state: dict) -> str:
     """
     Esta función clasifica los síntomas proporcionados por el usuario en una de las enfermedades predefinidas:
     Anemia, Diabetes, Thalassemia o Thrombosis, usando un modelo de clasificación de enfermedades en inglés.
-    Toma el texto de los síntomas desde el estado, y luego usa la función get_nlp_prediction() para hacer la predicción.
-    Devuelve un diccionario con la predicción de la enfermedad.
+    Toma el texto de los síntomas desde el estado del grafo, y luego usa la función get_nlp_prediction() para 
+    hacer la predicción. Actualiza el estado del grafo con la predicción de la enfermedad.
     """
     input_text = state['input_text']
     prediction_mapping = {0: 'Anemia',
@@ -70,9 +70,9 @@ def classify_disease_from_analysis(state: dict) -> str:
     """
     Esta función clasifica la enfermedad basándose en un análisis de sangre. 
     Primero, obtiene el nombre del documento del análisis utilizando la función 'get_analysis_doc_name',
-    luego procesa el texto usando la función 'preprocess_data_to_extract', 
-    extrae los datos con 'extract_data_from_text_chunks', 
-    y finalmente realiza una predicción utilizando el modelo cargado desde un archivo con 'xgb_model.predict'.
+    luego procesa el texto usando la función 'preprocess_data_to_extract', extrae los datos 
+    con 'extract_data_from_text_chunks', y finalmente realiza una predicción utilizando el modelo 
+    cargado desde un archivo con 'xgb_model.predict'.
     """
     blood_analysis_doc_name = get_analysis_doc_name(state['detected_language'],
                                                     state['nlp_disease_prediction']).lower()
@@ -96,8 +96,7 @@ def final_answer_generator(state: dict) -> str:
     Esta función genera la respuesta final basándose en la predicción de los síntomas y el análisis.
     Primero, llama a la función generate_final_answer pasando la predicción de los síntomas, 
     la predicción basada en el análisis de sangre y el idioma detectado. Luego, imprime y devuelve 
-    la respuesta generada, para finalmente utilizar la función generate_final_answer para elaborar 
-    la respuesta final.
+    la respuesta generada.
     """
     final_answer = generate_final_answer(
         state["nlp_disease_prediction"],
