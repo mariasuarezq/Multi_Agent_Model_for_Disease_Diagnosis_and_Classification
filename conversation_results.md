@@ -29,8 +29,7 @@ Pero los síntomas por sí solos a menudo no son suficientes para realizar un di
 Los formatos aceptados son txt, csv, xlsx, docx and pdf:
 anemia_2.pdf
 
-Estimado paciente,
-Nuestro modelo ha realizado dos predicciones. Basándose en los síntomas que usted proporcionó, la predicción inicial es Talasemia. Sin embargo, después de analizar su muestra de sangre, la predicción es Anemia.
+Estimado paciente, nuestro modelo ha realizado dos predicciones. Basándose en los síntomas que usted proporcionó, la predicción inicial es Talasemia. Sin embargo, después de analizar su muestra de sangre, la predicción es Anemia.
 Dado que ambas predicciones sugieren trastornos relacionados con la sangre, pero son específicamente diferentes, le recomendamos consultar a un hematólogo, especialista en enfermedades de la sangre, para una evaluación y diagnóstico precisos. Este profesional podrá determinar el curso de acción adecuado y brindarle el tratamiento necesario si es que no se encuentra saludable.
 Recuerde que en el campo de la salud, siempre es mejor consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados.
 
@@ -51,8 +50,7 @@ Could you please insert the document's name with your blood sample analysis?
 The supported extensions are son txt, csv, xlsx, docx and pdf:
 anemia_4.txt
 
-Dear patient,
-Initially, based on the symptoms you provided, our model predicted that you may be suffering from Thalassemia. However, after analyzing your blood sample, the model predicted Anemia.
+Dear patient, initially, based on the symptoms you provided, our model predicted that you may be suffering from Thalassemia. However, after analyzing your blood sample, the model predicted Anemia.
 As these two predictions suggest different conditions, we recommend that you consult both a Hematologist, who specializes in blood disorders such as Thalassemia and Anemia, for a comprehensive evaluation and diagnosis.        
 It's always best to consult a specialized professional in the healthcare field for an accurate diagnosis and appropriate treatment plan.
 Please schedule an appointment with a Hematologist at your earliest convenience.
