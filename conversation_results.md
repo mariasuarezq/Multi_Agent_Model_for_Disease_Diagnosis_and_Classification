@@ -112,3 +112,24 @@ Los formatos aceptados son txt, csv, xlsx, docx and pdf:
 anemia_7.xlsx
 
 Estimado paciente, según la evaluación inicial basada en sus síntomas, la predicción apuntaba hacia la Diabetes. Sin embargo, tras analizar su muestra de sangre, la predicción sugiere Anemia. Dado que ambas predicciones indican posibles condiciones diferentes, le recomiendo consultar a un endocrinólogo para evaluar la posible Diabetes y a un hematólogo para evaluar la posible Anemia. Es importante obtener una evaluación completa y precisa para determinar el curso de acción adecuado para su salud.
+
+## Diabetes_1.csv
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please: 
+
+Hi, I have increased thirst and urination. Moreover, I feel my muscles trembling. What can it be?
+
+The symptoms may suggest Thalassemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+diabetes_1.csv
+
+Dear patient,
+
+Initially, based on the symptoms you provided, our model predicted that you may be suffering from Thalassemia. However, after analyzing your blood sample, the model suggested a different condition, Diabetes.
+
+Given the discrepancy between the two predictions, we recommend that you consult both a Hematologist, who specializes in blood disorders such as Thalassemia, and an Endocrinologist, who specializes in hormonal disorders such as Diabetes. This will ensure that you receive a comprehensive evaluation and accurate diagnosis.
+
+Please schedule appointments with these specialized doctors to determine the best course of action for your health.
