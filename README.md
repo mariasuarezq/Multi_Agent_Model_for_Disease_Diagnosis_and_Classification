@@ -55,9 +55,22 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
    pip install -r requirements.txt
    ```
 
----
 
 ## Uso
+### Pasos Preliminares
+1. Ejecuta los siguientes archivos, que se encuentran dentro de la carpeta "models_training", descomentando la celda donde se guardan los modelos. Estos modelos se guardarán en la carpeta "models":
+   - disease_classification.ipynb
+   - language_detection.ipynb
+   - nlp_disease_classification_en.ipynb
+   - nlp_disease_classification_sp.ipynb
+2. Desde la web https://cloud.sambanova.ai/, genera una api key para el modelo Meta-Llama-3.3-70B-Instruct. Guárdala en un archivo llamado config.json, en la root del proyecto, en este formato:
+
+```json
+{
+  "samba_cloud_api_key": "api_key"
+}
+   ```
+3. Carga tu analítica en la carpeta src\multi_agent_graph\utils\analysis_documents.
 ### Ejecución del Modelo
 1. Ejecuta el archivo graph.py
 2. Sigue las instrucciones en pantalla:
@@ -72,11 +85,6 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
 - Diagnóstico preliminar basado en síntomas.
 - Diagnóstico final basado en datos clínicos.
 - Recomendaciones detalladas en el idioma del paciente.
-
-
-
-## Licencia
-Este proyecto está bajo la licencia [MIT](LICENSE).
 
 
 
