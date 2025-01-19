@@ -248,3 +248,33 @@ The supported extensions are son txt, csv, xlsx, docx and pdf:
 healthy_1.txt
 
 Dear patient, initially, based on the symptoms you provided, our model predicted that you might be suffering from Anemia. However, after analyzing your blood sample, the model indicates that you are likely Healthy. Given these results, if you are not feeling healthy, we recommend that you consult a Hematologist, a specialized doctor for blood-related disorders such as Anemia, to confirm the initial prediction and rule out any potential issues. Nevertheless, in the healthcare field, it is always best to consult a specialized professional for a definitive diagnosis and advice. Please take care and consider consulting a specialist for further evaluation.
+
+## Healthy_2.txt
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please: 
+
+Hola, hace un tiempo que noto que tengo mucha tos y estoy todo el tiempo cansada. ¿Qué podría ser?
+
+Los síntomas pueden sugerir Diabetes.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf: 
+healthy_2.docx
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, la predicción apuntaba hacia la posibilidad de Diabetes. Sin embargo, tras analizar su muestra de sangre, los resultados indican que usted está sano. En cualquier caso, es importante recordar que en el campo de la salud siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados. Si tiene alguna inquietud o síntoma persistente, le sugiero que visite a un endocrinólogo para una evaluación más detallada, ya que ellos están especializados en el tratamiento de enfermedades como la diabetes.
+
+## Healthy_4.txt
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, ultimamente me siento muy cansada y me duele la pierna a veces. ¿Qué me podría estar pasando?
+
+Los síntomas pueden sugerir Trombosis.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+healthy_4.txt
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se sugirió una posible trombosis. Sin embargo, tras analizar su muestra de sangre, los resultados indican que usted está sano. Aunque los resultados de la análisis de sangre son favorables, si sigue experimentando síntomas que le preocupan, sería recomendable consultar a un médico especialista en trombosis para una evaluación más detallada y precisa. En el campo de la salud, siempre es mejor consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados. 
