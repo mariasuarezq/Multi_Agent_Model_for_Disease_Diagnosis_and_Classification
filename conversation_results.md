@@ -285,6 +285,21 @@ healthy_2.docx
 
 Estimado paciente, según la evaluación inicial basada en sus síntomas, la predicción apuntaba hacia la posibilidad de Diabetes. Sin embargo, tras analizar su muestra de sangre, los resultados indican que usted está sano. En cualquier caso, es importante recordar que en el campo de la salud siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados. Si tiene alguna inquietud o síntoma persistente, le sugiero que visite a un endocrinólogo para una evaluación más detallada, ya que ellos están especializados en el tratamiento de enfermedades como la diabetes.
 
+## Healthy_3.pdf
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, últimamente me noto sin energía, y con dolores en el cuerpo. ¿Qué podría ser?
+
+Los síntomas pueden sugerir Anemia.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+healthy_3.pdf
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se sugirió que podría padecer de Anemia. Sin embargo, tras analizar su muestra de sangre, los resultados indican que se encuentra saludable. Aunque los resultados de la análisis de sangre son favorables, en el campo de la salud siempre es recomendable consultar a un profesional especializado para una evaluación más precisa y personalizada. En este caso, podría ser útil consultar a un hematólogo para una revisión más detallada, aunque los resultados de su análisis de sangre no indiquen problemas actuales.
+
 ## Healthy_4.txt
 Hi, I am a virtual assistant designed to detect diseases.
 The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
