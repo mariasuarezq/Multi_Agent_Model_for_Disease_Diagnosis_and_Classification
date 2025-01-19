@@ -444,3 +444,87 @@ thalasse_6.txt
 Dear patient,
 
 Based on the symptoms you provided, our initial prediction was that you may be suffering from Thalassemia. Further analysis of your blood sample has confirmed this prediction, also indicating Thalassemia. If you are not feeling healthy, I recommend that you consult a hematologist, a specialized doctor who deals with blood disorders, for a thorough evaluation and guidance. However, even if you are feeling healthy, it's always best to consult a specialized professional in the healthcare field for an accurate diagnosis and advice. Please take care and schedule an appointment with a hematologist at your earliest convenience.
+
+## Thalasse_7.xlsx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, me siento muy debil, además de que mi piel está pálida. ¿A qué puede deberse?
+
+Los síntomas pueden sugerir Talasemia.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+thalasse_7.xlsx
+
+Estimado paciente,
+
+Nuestro modelo ha realizado dos predicciones. Inicialmente, basándose en los síntomas que usted proporcionó, se sugirió que podría padecer Talasemia. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó como Talasemia. Dado que ambas predicciones coinciden, si no se siente completamente saludable, le recomendamos que consulte a un hematólogo, especialista en enfermedades de la sangre, para una evaluación y diagnóstico precisos. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener orientación adecuada.
+
+Atentamente, [Asistente Virtual Médico]
+
+## Thrombosis_1.csv
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, una de mis piernas se ha hinchado y está muy caliente. ¿Qué me ocurre?
+
+Los síntomas pueden sugerir Trombosis.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+thrombosis_1.csv
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se predijo que podría padecer de Trombosis. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó nuevamente como Trombosis. Si no se siente saludable, le recomiendo que consulte a un médico especialista en trombosis, como un hematólogo o un cardiólogo, para una evaluación y tratamiento adecuados. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento precisos.
+
+## Thrombosis_2.pdf
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hi, my leg has started swelling and my veins in my arm are more visible. What could it be?
+
+The symptoms may suggest Thrombosis.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+thrombosis_2.pdf
+
+Dear patient,
+
+Based on the symptoms you provided, our initial prediction was that you may be at risk of developing Thrombosis. Following the analysis of your blood sample, our model confirmed this prediction, also indicating Thrombosis as the potential condition. If you are not feeling healthy, we recommend that you consult a hematologist, a specialized doctor who deals with blood disorders, for further evaluation and guidance. However, even if you are feeling well, it's always best to consult a specialized professional in the healthcare field for personalized advice. Please schedule an appointment with a hematologist to discuss your specific situation and determine the best course of action.
+
+Best regards.
+
+## Thrombosis_3.docx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hi, I have a lot of pain. What can it be?
+
+The symptoms may suggest Thrombosis.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+thrombosis_3.docx
+
+Dear patient,
+
+Based on the symptoms you provided, our initial prediction was that you may be at risk of developing Thrombosis. Further analysis of your blood sample confirmed this prediction, also indicating Thrombosis as the potential condition. If you are not feeling healthy, I strongly recommend that you consult a hematologist, a specialized doctor who deals with blood disorders, for a thorough evaluation and guidance. However, even if you are feeling healthy, it's always best to consult a specialized professional in the healthcare field for personalized advice and care. Please take care and schedule an appointment with a hematologist at your earliest convenience.
+
+## Thrombosis_4.txt
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+Buenas tardes, llevo unos días notando calambres en una de mis piernas, y se está empezando a poner un poco morada. ¿A qué puede deberse?
+
+Los síntomas pueden sugerir Trombosis.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+thrombosis_4.txt
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se predijo que podría padecer de Trombosis. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó nuevamente como Trombosis. Si no se siente saludable, le recomiendo que consulte a un médico especialista en trombosis, como un hematólogo o un cardiólogo, para una evaluación y tratamiento adecuados. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento precisos.
