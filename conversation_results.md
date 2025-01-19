@@ -595,15 +595,21 @@ Could you please insert the document's name with your blood sample analysis?
 The supported extensions are son txt, csv, xlsx, docx and pdf:
 thrombosis_6.csv
 
+Dear patient,
 
+Based on the symptoms you provided, our initial prediction was that you may be at risk of developing Thrombosis. Further analysis of your blood sample confirmed this prediction, also indicating Thrombosis as the potential condition. If you are not feeling healthy, I strongly recommend that you consult a hematologist, a specialized doctor who deals with blood disorders, for a thorough evaluation and guidance. However, even if you are feeling healthy, it's always best to consult a specialized professional in the healthcare field for personalized advice and care. Please take care and schedule an appointment with a hematologist at your earliest convenience.
 
+## Thrombosis_7.xlsx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
 
- Dear patient,
+Me duele muchísimo la pierna, es un dolor agudo. También, tengo dolor en la pantorrilla, y está muy caliente. ¿Es esto normal?
 
-Based on the symptoms you provided, our initial prediction was that you may be at risk of developing Thrombosis. Further analysis of your blood sample confirmed this prediction, also indicating Thrombosis as the potential condition.
+Los síntomas pueden sugerir Trombosis.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+thrombosis_7.xlsx
 
-If you are not feeling healthy, I strongly recommend that you consult a hematologist, a specialized doctor who deals with blood disorders, for a thorough evaluation and guidance.
-
-However, even if you are feeling healthy, it's always best to consult a specialized professional in the healthcare field for personalized advice and care.
-
-Please take care and schedule an appointment with a hematologist at your earliest convenience.
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se predijo que podría padecer de Trombosis. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó nuevamente como Trombosis. Si no se siente saludable, le recomiendo que consulte a un médico especialista en trombosis, como un hematólogo o un cardiólogo, para una evaluación y tratamiento adecuados. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento precisos.
