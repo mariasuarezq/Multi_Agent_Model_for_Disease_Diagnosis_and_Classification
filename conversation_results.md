@@ -133,3 +133,52 @@ Initially, based on the symptoms you provided, our model predicted that you may 
 Given the discrepancy between the two predictions, we recommend that you consult both a Hematologist, who specializes in blood disorders such as Thalassemia, and an Endocrinologist, who specializes in hormonal disorders such as Diabetes. This will ensure that you receive a comprehensive evaluation and accurate diagnosis.
 
 Please schedule appointments with these specialized doctors to determine the best course of action for your health.
+
+## Diabetes_2.txt
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please: 
+
+Hola, últimamente tengo muchas ganas de orinar todo el rato. Además, noto que tengo la visión borrosa. ¿Qué me puede estar pasando?
+
+Los síntomas pueden sugerir Diabetes.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf: 
+diabetes_2.txt
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se predijo que podría padecer de Diabetes. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó nuevamente como Diabetes. Si no se siente completamente saludable, le recomiendo que consulte a un endocrinólogo, especialista en el tratamiento de la Diabetes, para una evaluación y orientación personalizada. De cualquier manera, en el ámbito de la salud, siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados.
+
+## Diabetes_3.pdf
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please: 
+
+Buenos días. Últimamente, tengo muchas infecciones, y además de esto, noto que estoy perdiendo mucho peso, sin estar haciendo ninguna dieta específica, porque sigo comiendo lo mismo de siempre. ¿Qué me 
+
+Los síntomas pueden sugerir Diabetes.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+diabetes_3.pdf
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se predijo que podría padecer de Diabetes. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó nuevamente como Diabetes. Si no se siente completamente saludable, le recomiendo que consulte a un endocrinólogo, especialista en el tratamiento de la Diabetes, para una evaluación y orientación personalizada. De cualquier manera, en el ámbito de la salud, siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados.
+
+## Diabetes_4.docx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please: 
+
+Hi, lately, I have palpitations. What disease do I have?
+
+The symptoms may suggest Thalassemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+diabetes_4.docx
+
+
+Dear patient,
+
+
+Initially, based on the symptoms you provided, our model predicted that you may be suffering from Thalassemia. However, after analyzing your blood sample, the model suggested a different condition, Diabetes. Given the discrepancy between the two predictions, we recommend that you consult both a Hematologist, who specializes in blood disorders such as Thalassemia, and an Endocrinologist, who specializes in hormonal disorders like Diabetes. It's always best to consult with specialized professionals in the healthcare field to determine the most accurate diagnosis and appropriate treatment plan. Please schedule appointments with both specialists to discuss your symptoms and analysis results in more detail. They will be able to provide you with a comprehensive evaluation and guide you towards the best course of action. Remember, early diagnosis and treatment can significantly impact your health outcomes, so don't hesitate to seek medical attention if you're not feeling well. Take care and we hope you receive the care you need.
