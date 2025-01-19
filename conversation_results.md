@@ -367,3 +367,42 @@ thalasse_2.txt
 Dear patient,
 
 Based on the symptoms you provided, our initial prediction was that you may be suffering from Thalassemia. Further analysis of your blood sample has confirmed this prediction, also indicating Thalassemia. If you are not feeling healthy, I recommend that you consult a hematologist, a specialized doctor who deals with blood disorders, for a thorough evaluation and guidance. However, even if you are feeling healthy, it's always best to consult a specialized professional in the healthcare field for an accurate diagnosis and advice. Please take care and schedule an appointment with a hematologist at your earliest convenience.
+
+## Thalasse_3.docx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, tengo la piel pálida y me siento muy cansada. ¿Qué me puede estar pasando?
+
+Los síntomas pueden sugerir Anemia.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+thalasse_3.docx
+
+Estimado paciente,
+
+Nuestro modelo ha realizado dos predicciones. Basándose en los síntomas que usted proporcionó, la predicción inicial es Anemia. Sin embargo, después de analizar su muestra de sangre, la predicción es Talasemia. Dado que ambas predicciones sugieren trastornos relacionados con la sangre, si no se siente saludable, le recomendamos consultar a un hematólogo, especialista en trastornos de la sangre, para una evaluación y diagnóstico precisos. El hematólogo podrá determinar si padece Anemia, Talasemia o cualquier otro trastorno y recomendar el tratamiento adecuado. Recuerde que, en el campo de la salud, siempre es mejor consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados.
+
+Atentamente, [Asistente Virtual Médico]
+
+## Thalasse_4.csv
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Buenas tardes, noto que tengo hinchazón, y que mi cara parece que estuviera cambiando. ¿Qué es lo que me ocurre?
+
+
+Los síntomas pueden sugerir Talasemia.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+thalasse_4.csv
+
+Estimado paciente,
+
+Nuestro modelo ha realizado dos predicciones. Inicialmente, basándose en los síntomas que usted proporcionó, se sugirió que podría padecer Talasemia. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó como Talasemia. Dado que ambas predicciones coinciden, si no se siente completamente saludable, le recomendamos que consulte a un hematólogo, especialista en enfermedades de la sangre, para una evaluación y diagnóstico precisos. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener orientación adecuada.
+
+Atentamente, [Asistente Virtual Médico]
