@@ -278,3 +278,42 @@ Los formatos aceptados son txt, csv, xlsx, docx and pdf:
 healthy_4.txt
 
 Estimado paciente, según la evaluación inicial basada en sus síntomas, se sugirió una posible trombosis. Sin embargo, tras analizar su muestra de sangre, los resultados indican que usted está sano. Aunque los resultados de la análisis de sangre son favorables, si sigue experimentando síntomas que le preocupan, sería recomendable consultar a un médico especialista en trombosis para una evaluación más detallada y precisa. En el campo de la salud, siempre es mejor consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados. 
+
+## Healthy_5.csv
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hi, I'm always cold. Moreover, I've been feeling really weak. It's something I should worry about?
+
+The symptoms may suggest Anemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+healthy_5.csv
+
+Dear patient,
+
+Initially, based on the symptoms you provided, our model predicted that you might be suffering from Anemia. However, after analyzing your blood sample, the model indicates that you are likely Healthy.
+
+Given these results, if you are not feeling healthy, it would be advisable to consult a Hematologist, a specialized doctor for blood-related disorders, to confirm the initial prediction and rule out any potential issues. Nevertheless, in the healthcare field, it is always best to consult a specialized professional for a definitive diagnosis and personalized advice.
+
+Please consider scheduling an appointment with a Hematologist to discuss your symptoms and blood analysis results in more detail.
+
+Best regards,
+Medical Virtual Assistant
+
+## Healthy_6.docx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, parece que se me ha puesto la piel de mi cuerpo un poco roja en algunas zonas. Además, siempre estoy cansada. ¿Podría deberse a alguna enfermedad?
+
+Los síntomas pueden sugerir Anemia.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+healthy_6.docx
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se sugirió que podría padecer de Anemia. Sin embargo, tras analizar su muestra de sangre, los resultados indican que se encuentra saludable. Aunque los resultados de la análisis de sangre indican que está saludable, en el campo de la salud siempre es recomendable consultar a un profesional especializado para una evaluación más precisa. Si tiene alguna inquietud o síntoma persistente, sería beneficioso visitar a un hematólogo para una consulta y evaluación detallada.
