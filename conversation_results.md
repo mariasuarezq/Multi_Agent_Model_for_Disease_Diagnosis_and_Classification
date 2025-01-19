@@ -406,3 +406,41 @@ Estimado paciente,
 Nuestro modelo ha realizado dos predicciones. Inicialmente, basándose en los síntomas que usted proporcionó, se sugirió que podría padecer Talasemia. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó como Talasemia. Dado que ambas predicciones coinciden, si no se siente completamente saludable, le recomendamos que consulte a un hematólogo, especialista en enfermedades de la sangre, para una evaluación y diagnóstico precisos. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener orientación adecuada.
 
 Atentamente, [Asistente Virtual Médico]
+
+## Thalasse_5.pdf
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hi, lately I have no appetite, and I feel fatigued all the time. What can this be?
+
+The symptoms may suggest Anemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+thalasse_5.pdf
+
+Dear patient,
+
+Initially, based on the symptoms you provided, our model predicted that you may be suffering from Anemia. However, after analyzing your blood sample, the model predicted Thalassemia. As these two predictions suggest different conditions, we recommend that you consult both a hematologist, who specializes in blood disorders such as Anemia, and a genetic specialist or a hematologist who has expertise in Thalassemia. It is always best to consult with specialized professionals in the healthcare field to get an accurate diagnosis and appropriate treatment plan. Please schedule an appointment with the recommended specialists at your earliest convenience.
+
+Best regards,
+
+Medical Virtual Assistant.
+
+## Thalasse_6.txt
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Good afternoon, my growth seems slower than usual. Furthermore, I have abdominal swelling all the time. What is happening to me?
+
+The symptoms may suggest Thalassemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+thalasse_6.txt
+
+Dear patient,
+
+Based on the symptoms you provided, our initial prediction was that you may be suffering from Thalassemia. Further analysis of your blood sample has confirmed this prediction, also indicating Thalassemia. If you are not feeling healthy, I recommend that you consult a hematologist, a specialized doctor who deals with blood disorders, for a thorough evaluation and guidance. However, even if you are feeling healthy, it's always best to consult a specialized professional in the healthcare field for an accurate diagnosis and advice. Please take care and schedule an appointment with a hematologist at your earliest convenience.
