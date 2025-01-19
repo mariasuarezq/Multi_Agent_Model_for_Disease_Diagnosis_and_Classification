@@ -294,13 +294,10 @@ healthy_5.csv
 
 Dear patient,
 
-Initially, based on the symptoms you provided, our model predicted that you might be suffering from Anemia. However, after analyzing your blood sample, the model indicates that you are likely Healthy.
-
-Given these results, if you are not feeling healthy, it would be advisable to consult a Hematologist, a specialized doctor for blood-related disorders, to confirm the initial prediction and rule out any potential issues. Nevertheless, in the healthcare field, it is always best to consult a specialized professional for a definitive diagnosis and personalized advice.
-
-Please consider scheduling an appointment with a Hematologist to discuss your symptoms and blood analysis results in more detail.
+Initially, based on the symptoms you provided, our model predicted that you might be suffering from Anemia. However, after analyzing your blood sample, the model indicates that you are likely Healthy. Given these results, if you are not feeling healthy, it would be advisable to consult a Hematologist, a specialized doctor for blood-related disorders, to confirm the initial prediction and rule out any potential issues. Nevertheless, in the healthcare field, it is always best to consult a specialized professional for a definitive diagnosis and personalized advice. Please consider scheduling an appointment with a Hematologist to discuss your symptoms and blood analysis results in more detail.
 
 Best regards,
+
 Medical Virtual Assistant
 
 ## Healthy_6.docx
@@ -317,3 +314,56 @@ Los formatos aceptados son txt, csv, xlsx, docx and pdf:
 healthy_6.docx
 
 Estimado paciente, según la evaluación inicial basada en sus síntomas, se sugirió que podría padecer de Anemia. Sin embargo, tras analizar su muestra de sangre, los resultados indican que se encuentra saludable. Aunque los resultados de la análisis de sangre indican que está saludable, en el campo de la salud siempre es recomendable consultar a un profesional especializado para una evaluación más precisa. Si tiene alguna inquietud o síntoma persistente, sería beneficioso visitar a un hematólogo para una consulta y evaluación detallada.
+
+## Healthy_7.xlsx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hi, lately, my skin looks a little bit yellow and my energy is gone. Should I be concerned?
+
+The symptoms may suggest Thalassemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+healthy_7.xlsx
+
+Dear patient,
+
+Initially, based on the symptoms you provided, our model predicted that you might be suffering from Thalassemia. However, after analyzing your blood sample, the results indicate that you are likely healthy. Given these findings, if you are not feeling well, it would be advisable to consult a hematologist, a specialized doctor for blood disorders such as Thalassemia, to rule out any potential issues. Nevertheless, in the healthcare field, it is always best to consult a specialized professional for a definitive diagnosis and personalized advice. Please take care and consider consulting a specialist for further evaluation.
+
+## Thalasse_1.csv
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, me siento muy fatigada. Además, parece que mis huesos están débiles, porque me he roto el brazo dos veces en un año sin hacer nada raro como para partírmelo. ¿Qué me puede estar pasando? 
+
+Los síntomas pueden sugerir Talasemia.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+thalasse_1.csv
+
+Estimado paciente,
+
+Nuestro modelo ha realizado dos predicciones. Inicialmente, basándose en los síntomas que usted proporcionó, se sugirió que podría padecer Talasemia. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó como Talasemia. Dado que ambas predicciones coinciden, si no se siente completamente saludable, le recomendamos que consulte a un hematólogo, especialista en enfermedades de la sangre, para una evaluación y diagnóstico precisos. De cualquier manera, en el campo de la salud, siempre es recomendable consultar a un profesional especializado para obtener orientación adecuada.
+
+Atentamente, [Asistente Virtual Médico]
+
+## Thalasse_2.txt
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Good afternoon, in these weeks I've noticed my urine has turned dark, and my skin is a little yellow. Are these symptoms related?               
+
+The symptoms may suggest Thalassemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+thalasse_2.txt
+
+Dear patient,
+
+Based on the symptoms you provided, our initial prediction was that you may be suffering from Thalassemia. Further analysis of your blood sample has confirmed this prediction, also indicating Thalassemia. If you are not feeling healthy, I recommend that you consult a hematologist, a specialized doctor who deals with blood disorders, for a thorough evaluation and guidance. However, even if you are feeling healthy, it's always best to consult a specialized professional in the healthcare field for an accurate diagnosis and advice. Please take care and schedule an appointment with a hematologist at your earliest convenience.
