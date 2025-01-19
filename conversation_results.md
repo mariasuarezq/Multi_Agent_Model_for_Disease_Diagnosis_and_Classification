@@ -182,3 +182,40 @@ Dear patient,
 
 
 Initially, based on the symptoms you provided, our model predicted that you may be suffering from Thalassemia. However, after analyzing your blood sample, the model suggested a different condition, Diabetes. Given the discrepancy between the two predictions, we recommend that you consult both a Hematologist, who specializes in blood disorders such as Thalassemia, and an Endocrinologist, who specializes in hormonal disorders like Diabetes. It's always best to consult with specialized professionals in the healthcare field to determine the most accurate diagnosis and appropriate treatment plan. Please schedule appointments with both specialists to discuss your symptoms and analysis results in more detail. They will be able to provide you with a comprehensive evaluation and guide you towards the best course of action. Remember, early diagnosis and treatment can significantly impact your health outcomes, so don't hesitate to seek medical attention if you're not feeling well. Take care and we hope you receive the care you need.
+
+## Diabetes_5.txt
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, últimamente noto mis manos y pies con hormigueo. ¿A qué podría deberse?
+
+Los síntomas pueden sugerir Anemia.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf:
+diabetes_5.txt
+
+Estimado paciente, nuestro modelo ha realizado dos predicciones basadas en la información proporcionada. Inicialmente, según los síntomas que usted describió, la predicción apunta hacia Anemia. Sin embargo, al analizar su muestra de sangre, la predicción sugiere Diabetes. Dado que las dos predicciones indican enfermedades diferentes, le recomendamos que consulte a dos especialistas: un hematólogo para evaluar la posible Anemia y un endocrinólogo para evaluar la posible Diabetes. Es importante recordar que en el campo de la salud, siempre es mejor consultar a profesionales especializados para obtener un diagnóstico y tratamiento adecuados. Por favor, no dude en buscar atención médica si no se siente bien. Su salud es lo más importante.
+
+## Diabetes_6.pdf
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Good morning, lately I've been feeling incredibly tired. Moreover, I've been feeling irritable and it seems that I'm losing vision. What can it be?
+
+The symptoms may suggest Anemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf:
+diabetes_6.pdf
+
+Dear patient,
+
+Initially, based on the symptoms you provided, our model predicted that you may be suffering from Anemia. However, after analyzing your blood sample, the model suggested a different condition, Diabetes. Given the discrepancy between the two predictions, we recommend that you consult both a Hematologist, who specializes in blood disorders such as Anemia, and an Endocrinologist, who specializes in hormonal disorders such as Diabetes. It is always best to consult with specialized professionals in the healthcare field to determine the most accurate diagnosis and appropriate treatment plan. Please schedule an appointment with both specialists to discuss your symptoms and analysis results in more detail.
+
+
+Best regards,
+
+Medical Virtual Assistant.
