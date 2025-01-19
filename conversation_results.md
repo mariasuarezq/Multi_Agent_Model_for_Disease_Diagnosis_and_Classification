@@ -215,7 +215,36 @@ Dear patient,
 
 Initially, based on the symptoms you provided, our model predicted that you may be suffering from Anemia. However, after analyzing your blood sample, the model suggested a different condition, Diabetes. Given the discrepancy between the two predictions, we recommend that you consult both a Hematologist, who specializes in blood disorders such as Anemia, and an Endocrinologist, who specializes in hormonal disorders such as Diabetes. It is always best to consult with specialized professionals in the healthcare field to determine the most accurate diagnosis and appropriate treatment plan. Please schedule an appointment with both specialists to discuss your symptoms and analysis results in more detail.
 
-
 Best regards,
 
 Medical Virtual Assistant.
+
+## Diabetes_7.xlsx
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please:
+
+Hola, hace un tiempo que noto que siempre tengo ganas de orinar y de beber mucha agua. Además, también noto mucha sequedad en la boca y en la garganta. ¿Qué me puede estar pasando?
+
+Los síntomas pueden sugerir Diabetes.
+Pero los síntomas por sí solos a menudo no son suficientes para realizar un diagnóstico preciso.
+¿Podrías por favor introducir el nombre del documento que contiene tu análisis de sangre?
+Los formatos aceptados son txt, csv, xlsx, docx and pdf: 
+diabetes_7.xlsx
+
+Estimado paciente, según la evaluación inicial basada en sus síntomas, se predijo que podría padecer de Diabetes. Posteriormente, tras analizar su muestra de sangre, la predicción se confirmó nuevamente como Diabetes. Si no se siente completamente saludable, le recomiendo que consulte a un endocrinólogo, especialista en el tratamiento de la Diabetes, para una evaluación y orientación personalizada. De cualquier manera, en el ámbito de la salud, siempre es recomendable consultar a un profesional especializado para obtener un diagnóstico y tratamiento adecuados.
+
+## Healthy_1.txt
+Hi, I am a virtual assistant designed to detect diseases.
+The diseases I can recognize are: anemia, diabetes, thalassemia and thrombosis.
+Tell me your symptoms, be concise and informative please: 
+
+Hi, lately I've been dealing with headache and I'm feeling tired. What could it be?
+
+The symptoms may suggest Anemia.
+But the symptoms alone are often not sufficient to make an accurate diagnosis.
+Could you please insert the document's name with your blood sample analysis?
+The supported extensions are son txt, csv, xlsx, docx and pdf: 
+healthy_1.txt
+
+Dear patient, initially, based on the symptoms you provided, our model predicted that you might be suffering from Anemia. However, after analyzing your blood sample, the model indicates that you are likely Healthy. Given these results, if you are not feeling healthy, we recommend that you consult a Hematologist, a specialized doctor for blood-related disorders such as Anemia, to confirm the initial prediction and rule out any potential issues. Nevertheless, in the healthcare field, it is always best to consult a specialized professional for a definitive diagnosis and advice. Please take care and consider consulting a specialist for further evaluation.
