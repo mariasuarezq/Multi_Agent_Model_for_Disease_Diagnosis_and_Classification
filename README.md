@@ -27,7 +27,7 @@ Este proyecto implementa un modelo multiagente que diagnostica y clasifica enfer
   - Modelo de clasificación de síntomas en español, donde se ha utilizado el modelo preentrenado bertin para el fine tuning.
   - Modelo de clasificación de síntomas en inglés, donde se ha utilizado el modelo preentrenado distilbert para el fine tuning.
 - **Machine Learning**:
-  - Clasificadores clásicos (SVM, KNN Neighbours, Decission Tree y XGBoost) para análisis de datos clínicos, eligiendo el modelo construido con XGBoost como el mejor en términos de robustez y generalización.
+  - Clasificadores clásicos (SVM, KNN Neighbours, Decision Tree y XGBoost) para análisis de datos clínicos, eligiendo el modelo construido con XGBoost como el mejor en términos de robustez y generalización.
 - **Large Language Model (LLM)**:
   - Generación de respuestas detalladas y recomendaciones finales mediante el modelo de LLM "Meta-Llama-3.3-70B-Instruct"
 - **Integración de formatos**:
